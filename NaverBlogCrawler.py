@@ -51,8 +51,17 @@ def classify(title, is_notice):
     return "기타"
 
 def parse_date(date_str):
+    """날짜 문자열 파싱.
+    - '2026.05.07.' 형식 → 해당 날짜
+    - '19:18' 형식 (시:분) → 오늘 날짜로 처리 (네이버 카페는 당일 글에 시간만 표시)
+    """
     try:
         cleaned = date_str.strip().rstrip(".")
+        # 시간 형식 (HH:MM)이면 = 오늘 글
+        if re.match(r'^\d{1,2}:\d{2}$', cleaned):
+            today = datetime.now().date()
+            return datetime.combine(today, datetime.min.time())
+        # 일반 날짜 형식
         return datetime.strptime(cleaned, "%Y.%m.%d")
     except:
         return None

@@ -223,9 +223,18 @@ for page in range(1, MAX_PAGES + 1):
         total_collected += 1
 
         # ⭐ 새 글 감지 (페이지 파라미터 제거 + 최근 2일 이내)
+        # ⚠️ 임시: CATCH_UP_FROM 날짜 이후 글들은 모두 알림 (누락된 글 복구용)
+        CATCH_UP_FROM = datetime(2026, 5, 6).date()  # 이 날짜 이후 글은 모두 알림
+        CATCH_UP_MODE = True  # ← 한 번 실행 후 False로 바꾸세요!
+
         if normalize_link(link) not in previous_links:
             today = datetime.now().date()
-            if article_date and (today - article_date.date()).days <= 1:
+            if CATCH_UP_MODE and article_date and article_date.date() >= CATCH_UP_FROM:
+                # 임시 복구 모드: 지정한 날짜 이후 누락된 글 알림
+                new_articles.append((article_data, category))
+                print(f"🔄 [복구 모드] 알림 추가: {title} ({date})")
+            elif not CATCH_UP_MODE and article_date and (today - article_date.date()).days <= 1:
+                # 정상 모드: 오늘/어제 글만 알림
                 new_articles.append((article_data, category))
             else:
                 print(f"⏭️ 새 링크지만 오래된 글이라 알림 제외: {title} ({date})")

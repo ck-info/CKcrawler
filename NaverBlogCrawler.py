@@ -116,7 +116,7 @@ previous_links = set()
 is_first_run = True
 
 CATCH_UP_FROM = datetime(2026, 5, 6).date()  # 이 날짜 이후 글은 무조건 새 글로 취급
-CATCH_UP_MODE = True  # ← 복구 완료 후 False로 바꾸세요!
+CATCH_UP_MODE = False  # ← 복구 완료 후 False로 바꾸세요!
 
 if db:
     try:

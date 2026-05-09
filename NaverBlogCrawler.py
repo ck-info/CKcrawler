@@ -115,16 +115,26 @@ def send_discord_notification(article, category):
 previous_links = set()
 is_first_run = True
 
+CATCH_UP_FROM = datetime(2026, 5, 6).date()  # 이 날짜 이후 글은 무조건 새 글로 취급
+CATCH_UP_MODE = True  # ← 복구 완료 후 False로 바꾸세요!
+
 if db:
     try:
         articles_ref = db.collection("articles").stream()
         for doc in articles_ref:
             data = doc.to_dict()
             for article in data.get("items", []):
+                article_date_stored = parse_date(article.get("date", ""))
+                # ⭐ 복구 모드: CATCH_UP_FROM 이후 글은 previous_links에 넣지 않음
+                # → 크롤링 시 "새 글"로 인식되어 알림 발송
+                if CATCH_UP_MODE and article_date_stored and article_date_stored.date() >= CATCH_UP_FROM:
+                    continue
                 previous_links.add(normalize_link(article["link"]))
         if previous_links:
             is_first_run = False
             print(f"📂 Firestore에서 이전 글 {len(previous_links)}개 로드 완료")
+            if CATCH_UP_MODE:
+                print(f"🔄 복구 모드: {CATCH_UP_FROM} 이후 글은 새 글로 처리")
         else:
             print("📂 Firestore에 이전 데이터 없음 (최초 실행)")
     except Exception as e:
@@ -223,14 +233,10 @@ for page in range(1, MAX_PAGES + 1):
         total_collected += 1
 
         # ⭐ 새 글 감지 (페이지 파라미터 제거 + 최근 2일 이내)
-        # ⚠️ 임시: CATCH_UP_FROM 날짜 이후 글들은 모두 알림 (누락된 글 복구용)
-        CATCH_UP_FROM = datetime(2026, 5, 6).date()  # 이 날짜 이후 글은 모두 알림
-        CATCH_UP_MODE = True  # ← 한 번 실행 후 False로 바꾸세요!
-
         if normalize_link(link) not in previous_links:
             today = datetime.now().date()
             if CATCH_UP_MODE and article_date and article_date.date() >= CATCH_UP_FROM:
-                # 임시 복구 모드: 지정한 날짜 이후 누락된 글 알림
+                # 복구 모드: 지정한 날짜 이후 누락된 글 알림
                 new_articles.append((article_data, category))
                 print(f"🔄 [복구 모드] 알림 추가: {title} ({date})")
             elif not CATCH_UP_MODE and article_date and (today - article_date.date()).days <= 1:

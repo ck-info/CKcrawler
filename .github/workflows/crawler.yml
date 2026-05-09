@@ -17,9 +17,7 @@ jobs:
           python-version: '3.11'
 
       - name: Chrome 설치
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
+        uses: browser-actions/setup-chrome@v1
 
       - name: 라이브러리 설치
         run: pip install selenium webdriver-manager requests firebase-admin

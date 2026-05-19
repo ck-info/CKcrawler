@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-19T11:38:02Z",
+  "updated_at": "2026-05-19T14:45:54Z",
   "start_date": "2026.04.01.",
-  "total": 41,
+  "total": 42,
   "categories": {
     "공지글": [
       {
@@ -105,6 +105,12 @@
     ],
     "신청글": [
       {
+        "title": "청강축제 \"떠오른\" 특별 프로그램 안내 — 몸놀이 플레이그라운드",
+        "author": "최화선 교수",
+        "date": "23:33",
+        "link": "https://cafe.naver.com/f-e/cafes/22694512/articles/28151?boardtype=L&menuid=111&referrerAllArticles=false&page=1"
+      },
+      {
         "title": "☆HUSS 융합캠프(인사이트)참가자 모집",
         "author": "산학협력단1",
         "date": "2026.05.13.",
@@ -150,7 +156,7 @@
         "title": "가스라이팅/데이트폭력/비동의 성관계/BDSM/성병/피임 <비교과 오픈>",
         "author": "학생상담센터",
         "date": "2026.04.21.",
-        "link": "https://cafe.naver.com/f-e/cafes/22694512/articles/28099?boardtype=L&menuid=111&referrerAllArticles=false&page=1"
+        "link": "https://cafe.naver.com/f-e/cafes/22694512/articles/28099?boardtype=L&menuid=111&referrerAllArticles=false&page=2"
       },
       {
         "title": "[청강대] 2026년 청년 예비 창업자 발굴 및 육성 사업 안내",
@@ -204,7 +210,7 @@
         "title": "[모집]2026 이천도자기축제 청강대부스(캐리커쳐, 페이스페인팅) 진행자 모집",
         "author": "청강대 산학취업처",
         "date": "2026.04.01.",
-        "link": "https://cafe.naver.com/f-e/cafes/22694512/articles/28047?boardtype=L&menuid=111&referrerAllArticles=false&page=2"
+        "link": "https://cafe.naver.com/f-e/cafes/22694512/articles/28047?boardtype=L&menuid=111&referrerAllArticles=false&page=3"
       }
     ],
     "이벤트": [

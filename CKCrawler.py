@@ -21,7 +21,7 @@ FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
 # ⚠️ 임시: 네이버 카페 → 학교 사이트 전환 후 첫 실행
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = False
+FORCE_FIRST_RUN = True
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: slug)

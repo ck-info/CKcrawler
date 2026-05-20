@@ -21,7 +21,7 @@ FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
 # ⚠️ 임시: 첫 실행 시 알림 없이 저장만
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = True
+FORCE_FIRST_RUN = False
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: 카테고리 ID)

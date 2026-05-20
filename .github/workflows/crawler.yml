@@ -1,9 +1,9 @@
-name: Naver Cafe Crawler
+name: CK Notice Crawler
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+    - cron: '*/30 * * * *'  # 30분마다 실행
+  workflow_dispatch:         # 수동 실행
 
 jobs:
   crawl:
@@ -16,17 +16,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Chrome 설치
-        uses: browser-actions/setup-chrome@v1
-
       - name: 라이브러리 설치
-        run: pip install selenium webdriver-manager requests firebase-admin
+        run: pip install requests firebase-admin
 
       - name: 크롤러 실행
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
-        run: python NaverBlogCrawler.py
+        run: python CKCrawler.py
 
       - name: JSON 파일 GitHub에 커밋 (백업용)
         run: |

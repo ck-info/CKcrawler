@@ -13,15 +13,15 @@ from firebase_admin import credentials, firestore
 # ⚙️ 설정값
 # ==========================================
 BASE_URL = "https://www.ck.ac.kr/wp-json/wp/v2"
-MAX_POSTS_PER_CATEGORY = 20
+CUTOFF_DATE = datetime(2026, 5, 1).date()  # 5월 이후 글만 수집
+MAX_PAGES = 10                              # 최대 페이지 수 (안전장치)
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
 # ⚠️ 임시: 네이버 카페 → 학교 사이트 전환 후 첫 실행
-# Firestore에 기존 네이버 카페 링크가 남아있어 알림 폭탄 방지용
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = False
+FORCE_FIRST_RUN = True
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: slug)
@@ -83,7 +83,7 @@ previous_links = set()
 is_first_run = True
 
 if FORCE_FIRST_RUN:
-    print("⚠️ FORCE_FIRST_RUN 모드: 알림 없이 저장만 합니다 (전환 후 첫 실행)")
+    print("⚠️ FORCE_FIRST_RUN 모드: 알림 없이 저장만 합니다")
 elif db:
     try:
         articles_ref = db.collection("articles").stream()
@@ -100,6 +100,116 @@ elif db:
         print(f"⚠️ Firestore 로드 실패: {e}")
 
 # ==========================================
+# 글 수집 함수
+# ==========================================
+def fetch_posts(slug, category_name):
+    """
+    카테고리별 글 수집:
+    1. 고정글 먼저 수집
+    2. 일반 글 페이지 순회 (5월 이후까지)
+    3. 고정글 링크 중복 제외
+    """
+    collected = []
+    sticky_links = set()  # 중복 제거용
+
+    # ① 고정글 수집
+    try:
+        res = requests.get(
+            f"{BASE_URL}/posts",
+            params={
+                "sticky": True,
+                "category_slug": slug,
+                "_fields": "id,title,date,link,sticky",
+                "per_page": 20
+            },
+            timeout=10
+        )
+        if res.status_code == 200:
+            sticky_posts = res.json()
+            for post in sticky_posts:
+                title = re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()
+                link = post["link"]
+                date = post["date"][:10]
+                sticky_links.add(link)
+                collected.append({
+                    "title": title,
+                    "date": date,
+                    "link": link,
+                    "is_sticky": True
+                })
+            if sticky_posts:
+                print(f"  📌 고정글 {len(sticky_posts)}개 수집")
+    except Exception as e:
+        print(f"  ⚠️ 고정글 수집 실패: {e}")
+
+    # ② 일반 글 페이지 순회
+    for page in range(1, MAX_PAGES + 1):
+        try:
+            res = requests.get(
+                f"{BASE_URL}/posts",
+                params={
+                    "sticky": False,
+                    "category_slug": slug,
+                    "_fields": "id,title,date,link,sticky",
+                    "per_page": 10,  # 페이지당 최대 10개
+                    "page": page,
+                    "orderby": "date",
+                    "order": "desc"
+                },
+                timeout=10
+            )
+
+            # 페이지 없으면 종료
+            if res.status_code == 400:
+                print(f"  ✅ {page-1}페이지까지 수집 완료")
+                break
+
+            if res.status_code != 200:
+                print(f"  ❌ 페이지 {page} API 오류: {res.status_code}")
+                break
+
+            posts = res.json()
+
+            if not posts:
+                print(f"  ✅ {page-1}페이지까지 수집 완료 (글 없음)")
+                break
+
+            stop = False
+            for post in posts:
+                title = re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()
+                link = post["link"]
+                date = post["date"][:10]
+                article_date = datetime.strptime(date, "%Y-%m-%d").date()
+
+                # 5월 이전이면 수집 중단
+                if article_date < CUTOFF_DATE:
+                    print(f"  ⏹️ {CUTOFF_DATE} 이전 글 발견, 수집 종료")
+                    stop = True
+                    break
+
+                # 고정글 중복 제외
+                if link in sticky_links:
+                    continue
+
+                collected.append({
+                    "title": title,
+                    "date": date,
+                    "link": link,
+                    "is_sticky": False
+                })
+
+            if stop:
+                break
+
+            print(f"  📄 {page}페이지 수집 완료")
+
+        except Exception as e:
+            print(f"  ❌ {page}페이지 수집 실패: {e}")
+            break
+
+    return collected
+
+# ==========================================
 # 카테고리별 글 수집
 # ==========================================
 categorized = {name: [] for name in CATEGORIES.keys()}
@@ -107,51 +217,20 @@ new_articles = []
 
 for category_name, slug in CATEGORIES.items():
     print(f"\n📂 [{category_name}] 수집 중...")
+    posts = fetch_posts(slug, category_name)
+    categorized[category_name] = posts
+    print(f"  → 총 {len(posts)}개 수집")
 
-    try:
-        res = requests.get(
-            f"{BASE_URL}/posts",
-            params={
-                "per_page": MAX_POSTS_PER_CATEGORY,
-                "category_slug": slug,
-                "_fields": "id,title,date,link",
-                "orderby": "date",
-                "order": "desc"
-            },
-            timeout=10
-        )
-
-        if res.status_code != 200:
-            print(f"  ❌ API 오류: {res.status_code}")
-            continue
-
-        posts = res.json()
-        print(f"  ✅ {len(posts)}개 수집")
-
-        for post in posts:
-            title = re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()
-            link = post["link"]
-            date = post["date"][:10]
-
-            article_data = {
-                "title": title,
-                "date": date,
-                "link": link
-            }
-
-            categorized[category_name].append(article_data)
-
-            # ⭐ 새 글 감지 (FORCE_FIRST_RUN이면 건너뜀)
-            if not FORCE_FIRST_RUN and link not in previous_links:
-                article_date = datetime.strptime(date, "%Y-%m-%d").date()
+    # ⭐ 새 글 감지
+    if not FORCE_FIRST_RUN:
+        for article_data in posts:
+            if article_data["link"] not in previous_links:
+                article_date = datetime.strptime(article_data["date"], "%Y-%m-%d").date()
                 today = datetime.now().date()
                 if (today - article_date).days <= 1:
                     new_articles.append((article_data, category_name))
                 else:
-                    print(f"  ⏭️ 새 링크지만 오래된 글이라 알림 제외: {title}")
-
-    except Exception as e:
-        print(f"  ❌ [{category_name}] 수집 실패: {e}")
+                    print(f"  ⏭️ 새 링크지만 오래된 글이라 알림 제외: {article_data['title']}")
 
 total_collected = sum(len(v) for v in categorized.values())
 print(f"\n✅ 전체 수집 완료 (총 {total_collected}개)")
@@ -183,7 +262,8 @@ if db:
 
         db.collection("metadata").document("status").set({
             "updated_at": firestore.SERVER_TIMESTAMP,
-            "total": total_collected
+            "total": total_collected,
+            "cutoff_date": str(CUTOFF_DATE)
         })
 
         print(f"\n🔥 Firestore 저장 완료")
@@ -193,13 +273,15 @@ if db:
 # 결과 출력
 print(f"\n📊 카테고리별 수집 결과:")
 for category_name, items in categorized.items():
-    print(f"  - {category_name}: {len(items)}개")
+    sticky_count = sum(1 for i in items if i.get("is_sticky"))
+    print(f"  - {category_name}: {len(items)}개 (고정글 {sticky_count}개 포함)")
 
 # ==========================================
 # 백업용 JSON 저장
 # ==========================================
 output = {
     "updated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+    "cutoff_date": str(CUTOFF_DATE),
     "total": total_collected,
     "categories": categorized
 }

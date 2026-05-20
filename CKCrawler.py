@@ -19,24 +19,24 @@ MAX_PAGES = 10                              # 최대 페이지 수 (안전장치
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
-# ⚠️ 임시: 네이버 카페 → 학교 사이트 전환 후 첫 실행
+# ⚠️ 임시: 첫 실행 시 알림 없이 저장만
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = False
+FORCE_FIRST_RUN = True
 
 # ==========================================
-# 크롤링할 카테고리 목록 (이름: slug)
+# 크롤링할 카테고리 목록 (이름: 카테고리 ID)
 # ==========================================
 CATEGORIES = {
-    "일반공지":    "notice",
-    "학사공지":    "bachelor",
-    "장학공지":    "scholarship",
-    "취창업공지":  "jobs-info-board",
-    "감염병공지":  "covid",
-    "CK_On_Show":  "ckonshow",
-    "언론이본청강": "press",
-    "입찰정보":    "bidding",
-    "채용정보":    "hire",
-    "개인정보공시": "privacy",
+    "일반공지":    1,
+    "학사공지":    32,
+    "장학공지":    1340,
+    "취창업공지":  43,
+    "감염병공지":  1370,
+    "CK_On_Show":  1079,
+    "언론이본청강": 34,
+    "입찰정보":    35,
+    "채용정보":    36,
+    "개인정보공시": 1342,
 }
 
 # ==========================================
@@ -102,56 +102,18 @@ elif db:
 # ==========================================
 # 글 수집 함수
 # ==========================================
-def fetch_posts(slug, category_name):
-    """
-    카테고리별 글 수집:
-    1. 고정글 먼저 수집
-    2. 일반 글 페이지 순회 (5월 이후까지)
-    3. 고정글 링크 중복 제외
-    """
+def fetch_posts(category_id, category_name):
+    """카테고리 ID로 5월 이후 글 수집 (페이지 순회)"""
     collected = []
-    sticky_links = set()  # 중복 제거용
 
-    # ① 고정글 수집
-    try:
-        res = requests.get(
-            f"{BASE_URL}/posts",
-            params={
-                "sticky": True,
-                "category_slug": slug,
-                "_fields": "id,title,date,link,sticky",
-                "per_page": 20
-            },
-            timeout=10
-        )
-        if res.status_code == 200:
-            sticky_posts = res.json()
-            for post in sticky_posts:
-                title = re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()
-                link = post["link"]
-                date = post["date"][:10]
-                sticky_links.add(link)
-                collected.append({
-                    "title": title,
-                    "date": date,
-                    "link": link,
-                    "is_sticky": True
-                })
-            if sticky_posts:
-                print(f"  📌 고정글 {len(sticky_posts)}개 수집")
-    except Exception as e:
-        print(f"  ⚠️ 고정글 수집 실패: {e}")
-
-    # ② 일반 글 페이지 순회
     for page in range(1, MAX_PAGES + 1):
         try:
             res = requests.get(
                 f"{BASE_URL}/posts",
                 params={
-                    "sticky": False,
-                    "category_slug": slug,
-                    "_fields": "id,title,date,link,sticky",
-                    "per_page": 10,  # 페이지당 최대 10개
+                    "categories": category_id,  # ID로 필터링
+                    "_fields": "id,title,date,link",
+                    "per_page": 10,
                     "page": page,
                     "orderby": "date",
                     "order": "desc"
@@ -159,7 +121,7 @@ def fetch_posts(slug, category_name):
                 timeout=10
             )
 
-            # 페이지 없으면 종료
+            # 페이지 초과 시 종료
             if res.status_code == 400:
                 print(f"  ✅ {page-1}페이지까지 수집 완료")
                 break
@@ -187,21 +149,16 @@ def fetch_posts(slug, category_name):
                     stop = True
                     break
 
-                # 고정글 중복 제외
-                if link in sticky_links:
-                    continue
-
                 collected.append({
                     "title": title,
                     "date": date,
-                    "link": link,
-                    "is_sticky": False
+                    "link": link
                 })
 
             if stop:
                 break
 
-            print(f"  📄 {page}페이지 수집 완료")
+            print(f"  📄 {page}페이지 수집 완료 ({len(posts)}개)")
 
         except Exception as e:
             print(f"  ❌ {page}페이지 수집 실패: {e}")
@@ -215,13 +172,13 @@ def fetch_posts(slug, category_name):
 categorized = {name: [] for name in CATEGORIES.keys()}
 new_articles = []
 
-for category_name, slug in CATEGORIES.items():
+for category_name, category_id in CATEGORIES.items():
     print(f"\n📂 [{category_name}] 수집 중...")
-    posts = fetch_posts(slug, category_name)
+    posts = fetch_posts(category_id, category_name)
     categorized[category_name] = posts
     print(f"  → 총 {len(posts)}개 수집")
 
-    # ⭐ 새 글 감지
+    # ⭐ 새 글 감지 (FORCE_FIRST_RUN이면 건너뜀)
     if not FORCE_FIRST_RUN:
         for article_data in posts:
             if article_data["link"] not in previous_links:
@@ -273,8 +230,7 @@ if db:
 # 결과 출력
 print(f"\n📊 카테고리별 수집 결과:")
 for category_name, items in categorized.items():
-    sticky_count = sum(1 for i in items if i.get("is_sticky"))
-    print(f"  - {category_name}: {len(items)}개 (고정글 {sticky_count}개 포함)")
+    print(f"  - {category_name}: {len(items)}개")
 
 # ==========================================
 # 백업용 JSON 저장

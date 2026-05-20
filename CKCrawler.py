@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import re
+import time
 from datetime import datetime
 
 # Firebase
@@ -12,24 +13,29 @@ from firebase_admin import credentials, firestore
 # ⚙️ 설정값
 # ==========================================
 BASE_URL = "https://www.ck.ac.kr/wp-json/wp/v2"
-MAX_POSTS_PER_CATEGORY = 20  # 카테고리별 최대 수집 개수
+MAX_POSTS_PER_CATEGORY = 20
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
+
+# ⚠️ 임시: 네이버 카페 → 학교 사이트 전환 후 첫 실행
+# Firestore에 기존 네이버 카페 링크가 남아있어 알림 폭탄 방지용
+# 한 번 실행 후 False로 바꾸세요!
+FORCE_FIRST_RUN = True
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: slug)
 # ==========================================
 CATEGORIES = {
-    "일반공지":   "notice",
-    "학사공지":   "bachelor",
-    "장학공지":   "scholarship",
-    "취창업공지": "jobs-info-board",
-    "감염병공지": "covid",
-    "CK_On_Show": "ckonshow",
+    "일반공지":    "notice",
+    "학사공지":    "bachelor",
+    "장학공지":    "scholarship",
+    "취창업공지":  "jobs-info-board",
+    "감염병공지":  "covid",
+    "CK_On_Show":  "ckonshow",
     "언론이본청강": "press",
-    "입찰정보":   "bidding",
-    "채용정보":   "hire",
+    "입찰정보":    "bidding",
+    "채용정보":    "hire",
     "개인정보공시": "privacy",
 }
 
@@ -76,7 +82,9 @@ def send_discord_notification(article, category):
 previous_links = set()
 is_first_run = True
 
-if db:
+if FORCE_FIRST_RUN:
+    print("⚠️ FORCE_FIRST_RUN 모드: 알림 없이 저장만 합니다 (전환 후 첫 실행)")
+elif db:
     try:
         articles_ref = db.collection("articles").stream()
         for doc in articles_ref:
@@ -121,10 +129,9 @@ for category_name, slug in CATEGORIES.items():
         print(f"  ✅ {len(posts)}개 수집")
 
         for post in posts:
-            # HTML 태그 제거 (제목에 포함될 수 있음)
             title = re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()
             link = post["link"]
-            date = post["date"][:10]  # 2026-05-07 형식으로 자름
+            date = post["date"][:10]
 
             article_data = {
                 "title": title,
@@ -134,8 +141,8 @@ for category_name, slug in CATEGORIES.items():
 
             categorized[category_name].append(article_data)
 
-            # ⭐ 새 글 감지: 이전 목록에 없고 최근 2일 이내
-            if link not in previous_links:
+            # ⭐ 새 글 감지 (FORCE_FIRST_RUN이면 건너뜀)
+            if not FORCE_FIRST_RUN and link not in previous_links:
                 article_date = datetime.strptime(date, "%Y-%m-%d").date()
                 today = datetime.now().date()
                 if (today - article_date).days <= 1:
@@ -152,13 +159,13 @@ print(f"\n✅ 전체 수집 완료 (총 {total_collected}개)")
 # ==========================================
 # 새 글 알림 전송
 # ==========================================
-if is_first_run:
-    print(f"\n🔔 최초 실행이므로 알림은 보내지 않습니다")
+if FORCE_FIRST_RUN or is_first_run:
+    print(f"\n🔔 최초 실행이므로 알림은 보내지 않습니다 (데이터 저장만)")
 elif new_articles:
     print(f"\n🆕 새 글 {len(new_articles)}개 발견! 디스코드 알림 전송 중...")
     for article_data, category in new_articles:
         send_discord_notification(article_data, category)
-        import time; time.sleep(0.5)
+        time.sleep(0.5)
 else:
     print(f"\n✨ 새 글 없음")
 
@@ -183,7 +190,7 @@ if db:
     except Exception as e:
         print(f"❌ Firestore 저장 실패: {e}")
 
-# 콘솔 결과 출력
+# 결과 출력
 print(f"\n📊 카테고리별 수집 결과:")
 for category_name, items in categorized.items():
     print(f"  - {category_name}: {len(items)}개")

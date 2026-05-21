@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-05-21T14:49:47Z",
-  "cutoff_date": "2026-05-01",
-  "total": 30,
+  "updated_at": "2026-05-21T15:12:04Z",
+  "cutoff_date": "2026-01-01",
+  "total": 128,
   "categories": {
     "일반공지": [
       {
-        "title": "2026학년도 1학기 Green Day 실시 안내",
+        "title": "1학기 Green Day 실시 안내",
         "date": "2026-05-19",
         "link": "https://www.ck.ac.kr/archives/232584"
       },
       {
-        "title": "2026학년도 청강축제 안내",
+        "title": "청강축제 안내",
         "date": "2026-05-19",
         "link": "https://www.ck.ac.kr/archives/232562"
       },
@@ -40,7 +40,7 @@
         "link": "https://www.ck.ac.kr/archives/232308"
       },
       {
-        "title": "2026학년도 청강봉사단 프로그램 농촌재능나눔활동 참가자 모집",
+        "title": "청강봉사단 프로그램 농촌재능나눔활동 참가자 모집",
         "date": "2026-05-07",
         "link": "https://www.ck.ac.kr/archives/232041"
       },
@@ -50,14 +50,294 @@
         "link": "https://www.ck.ac.kr/archives/232028"
       },
       {
-        "title": "[청강문화산업대학교 졸업생 특화 프로그램] 📢 직무·진로 탐색 완성(+해외취업) 특강 참여자 모집!",
+        "title": "직무·진로 탐색 완성(+해외취업) 특강 참여자 모집!",
         "date": "2026-05-07",
         "link": "https://www.ck.ac.kr/archives/232012"
       },
       {
-        "title": "2026년 경기청년 역량강화 기회지원 사업",
+        "title": "경기청년 역량강화 기회지원 사업",
         "date": "2026-05-04",
         "link": "https://www.ck.ac.kr/archives/231875"
+      },
+      {
+        "title": "청강봉사단 프로그램 글로벌 봉사활동 참가자 모집",
+        "date": "2026-04-30",
+        "link": "https://www.ck.ac.kr/archives/231778"
+      },
+      {
+        "title": "씨네별 5월 영화 상영 프로그램 및 퀴즈 안내",
+        "date": "2026-04-30",
+        "link": "https://www.ck.ac.kr/archives/231768"
+      },
+      {
+        "title": "2026 HUSS하계 계절학기 수강신청 안내",
+        "date": "2026-04-29",
+        "link": "https://www.ck.ac.kr/archives/231594"
+      },
+      {
+        "title": "HUSS 2026 테이크오프 페스타 신청 안내",
+        "date": "2026-04-28",
+        "link": "https://www.ck.ac.kr/archives/231573"
+      },
+      {
+        "title": "제2회 청강 ‘동물’ 캐릭터 공모전",
+        "date": "2026-04-23",
+        "link": "https://www.ck.ac.kr/archives/231322"
+      },
+      {
+        "title": "대학평의원회운영규정 개정(안) 의견수렴",
+        "date": "2026-04-21",
+        "link": "https://www.ck.ac.kr/archives/231289"
+      },
+      {
+        "title": "2026 전문대학 혁신지원사업 숏폼 영상 콘텐츠 공모전",
+        "date": "2026-04-21",
+        "link": "https://www.ck.ac.kr/archives/231251"
+      },
+      {
+        "title": "2026 “전공 간 융복합 콘텐츠 제작 프로젝트” 개최 안내",
+        "date": "2026-04-20",
+        "link": "https://www.ck.ac.kr/archives/231194"
+      },
+      {
+        "title": "청년 예비 창업자 발굴 및 육성 사업 안내",
+        "date": "2026-04-14",
+        "link": "https://www.ck.ac.kr/archives/230936"
+      },
+      {
+        "title": "등록 동아리 현황",
+        "date": "2026-04-13",
+        "link": "https://www.ck.ac.kr/archives/230906"
+      },
+      {
+        "title": "경기도「 1차 매입임대 예비입주자 모집공고」",
+        "date": "2026-04-13",
+        "link": "https://www.ck.ac.kr/archives/230893"
+      },
+      {
+        "title": "공인자격 도로교통사고감정사 자격검정 안내",
+        "date": "2026-04-09",
+        "link": "https://www.ck.ac.kr/archives/230875"
+      },
+      {
+        "title": "경기도 기후행동 기회소득 사업 안내",
+        "date": "2026-04-08",
+        "link": "https://www.ck.ac.kr/archives/230845"
+      },
+      {
+        "title": "청강문화산업대학교 AI 활용 가이드 공유",
+        "date": "2026-04-07",
+        "link": "https://www.ck.ac.kr/archives/230723"
+      },
+      {
+        "title": "학생증 발급 신청 안내",
+        "date": "2026-04-07",
+        "link": "https://www.ck.ac.kr/archives/230686"
+      },
+      {
+        "title": "인천 청년 해외배낭연수 장학생 선발 안내",
+        "date": "2026-04-07",
+        "link": "https://www.ck.ac.kr/archives/230678"
+      },
+      {
+        "title": "2학기 1차 교수초빙(초빙,겸임) 공고",
+        "date": "2026-04-06",
+        "link": "https://www.ck.ac.kr/archives/230654"
+      },
+      {
+        "title": "미래내일 일경험 사업 참여학생 1기 모집(인턴형, 프로젝트형)",
+        "date": "2026-04-01",
+        "link": "https://www.ck.ac.kr/archives/230406"
+      },
+      {
+        "title": "육군3사관학교 생도 모집 안내",
+        "date": "2026-03-31",
+        "link": "https://www.ck.ac.kr/archives/230367"
+      },
+      {
+        "title": "씨네별 4월 영화 상영 프로그램 및 퀴즈 안내",
+        "date": "2026-03-31",
+        "link": "https://www.ck.ac.kr/archives/230348"
+      },
+      {
+        "title": "2026 청강 속 또 다른 나: AI 캐릭터로 들려주는 대학생활 이야기 공모전 1차 합격자 발표",
+        "date": "2026-03-30",
+        "link": "https://www.ck.ac.kr/archives/230334"
+      },
+      {
+        "title": "1학기 사랑의 헌혈 캠페인 안내",
+        "date": "2026-03-30",
+        "link": "https://www.ck.ac.kr/archives/230316"
+      },
+      {
+        "title": "국토교통부 안내",
+        "date": "2026-03-30",
+        "link": "https://www.ck.ac.kr/archives/230288"
+      },
+      {
+        "title": "흡연 후 머문 자리, 다시 한 번 확인해주세요.",
+        "date": "2026-03-27",
+        "link": "https://www.ck.ac.kr/archives/230269"
+      },
+      {
+        "title": "1학기 동아리 자율 창작활동 지원 안내",
+        "date": "2026-03-25",
+        "link": "https://www.ck.ac.kr/archives/230225"
+      },
+      {
+        "title": "클린투게더) 개인형 이동장치 안전하게 이용해요.",
+        "date": "2026-03-23",
+        "link": "https://www.ck.ac.kr/archives/230088"
+      },
+      {
+        "title": "씨네별 3월 영화 상영 프로그램 및 퀴즈 안내",
+        "date": "2026-03-16",
+        "link": "https://www.ck.ac.kr/archives/229814"
+      },
+      {
+        "title": "CK-혁신학생리포터 2기 모집 안내",
+        "date": "2026-03-16",
+        "link": "https://www.ck.ac.kr/archives/229794"
+      },
+      {
+        "title": "학생증 발급을 위한 증명사진 등록 안내",
+        "date": "2026-03-13",
+        "link": "https://www.ck.ac.kr/archives/229762"
+      },
+      {
+        "title": "교내 게시판 이용안내",
+        "date": "2026-03-13",
+        "link": "https://www.ck.ac.kr/archives/229743"
+      },
+      {
+        "title": "다중운집인파사고 대비 국민행동요령",
+        "date": "2026-03-13",
+        "link": "https://www.ck.ac.kr/archives/229729"
+      },
+      {
+        "title": "졸업생 특화 프로그램 수요조사 안내",
+        "date": "2026-03-12",
+        "link": "https://www.ck.ac.kr/archives/229708"
+      },
+      {
+        "title": "1 기숙사 수면실 이용 안내",
+        "date": "2026-03-11",
+        "link": "https://www.ck.ac.kr/archives/229646"
+      },
+      {
+        "title": "동아리 등록 및 재등록 안내",
+        "date": "2026-03-10",
+        "link": "https://www.ck.ac.kr/archives/229567"
+      },
+      {
+        "title": "CK-혁신 크루 1기 모집 안내",
+        "date": "2026-03-09",
+        "link": "https://www.ck.ac.kr/archives/229514"
+      },
+      {
+        "title": "보건실 이용 안내",
+        "date": "2026-03-09",
+        "link": "https://www.ck.ac.kr/archives/229490"
+      },
+      {
+        "title": "청강 HUSS 사업단 재학생 서포터즈 2기 모집 안내",
+        "date": "2026-03-06",
+        "link": "https://www.ck.ac.kr/archives/229412"
+      },
+      {
+        "title": "교내 흡연구역 질서유지를 위한 사전예고 및 폐쇄 조치 안내",
+        "date": "2026-03-04",
+        "link": "https://www.ck.ac.kr/archives/229370"
+      },
+      {
+        "title": "에듀플렉스 피트니스센터 개관 및 운영 안내",
+        "date": "2026-03-03",
+        "link": "https://www.ck.ac.kr/archives/229254"
+      },
+      {
+        "title": "1학기 천원의 아침밥 운영 안내",
+        "date": "2026-02-27",
+        "link": "https://www.ck.ac.kr/archives/229092"
+      },
+      {
+        "title": "제31회 신입생 입학식 안내",
+        "date": "2026-02-25",
+        "link": "https://www.ck.ac.kr/archives/229006"
+      },
+      {
+        "title": "1학기 통학버스 변경사항 안내",
+        "date": "2026-02-24",
+        "link": "https://www.ck.ac.kr/archives/228910"
+      },
+      {
+        "title": "대학안전관리계획 공지",
+        "date": "2026-02-24",
+        "link": "https://www.ck.ac.kr/archives/228865"
+      },
+      {
+        "title": "2026 “청강 속 또 다른 나: AI 캐릭터로 들려주는 대학생활 이야기 공모전” 개최 안내",
+        "date": "2026-02-23",
+        "link": "https://www.ck.ac.kr/archives/228673"
+      },
+      {
+        "title": "1학기 계원예술대학교 학점교류 교과목 안내",
+        "date": "2026-02-11",
+        "link": "https://www.ck.ac.kr/archives/228492"
+      },
+      {
+        "title": "학생준칙, 제 증명 발급 및 수수료 징수, 다문화가족 및 외국인, 탈북민 학생 대학생활 지원에 관한 규정 개정(안)에 대한 의견수렴",
+        "date": "2026-02-10",
+        "link": "https://www.ck.ac.kr/archives/228439"
+      },
+      {
+        "title": "국가장학금 운영지침 폐지안에 대한 의견 수렴",
+        "date": "2026-02-10",
+        "link": "https://www.ck.ac.kr/archives/228429"
+      },
+      {
+        "title": "1학기 재학생 등록금 납부 안내",
+        "date": "2026-02-09",
+        "link": "https://www.ck.ac.kr/archives/228336"
+      },
+      {
+        "title": "졸업생 및 학부모 환영! 취업 상담 프로그램 안내",
+        "date": "2026-02-04",
+        "link": "https://www.ck.ac.kr/archives/228132"
+      },
+      {
+        "title": "장애학생/소수집단학생 등록 및 지원 안내",
+        "date": "2026-01-29",
+        "link": "https://www.ck.ac.kr/archives/227909"
+      },
+      {
+        "title": "제29회 전기 학위수여식 안내",
+        "date": "2026-01-22",
+        "link": "https://www.ck.ac.kr/archives/227740"
+      },
+      {
+        "title": "1학기 HUSS 사회구조 컨소시엄 학점교류 교과목 수강신청 안내",
+        "date": "2026-01-20",
+        "link": "https://www.ck.ac.kr/archives/227527"
+      },
+      {
+        "title": "시설물관리규정 개정(안) 의견수렴",
+        "date": "2026-01-20",
+        "link": "https://www.ck.ac.kr/archives/227463"
+      },
+      {
+        "title": "비정규 교육과정 운영 규정 개정(안) 의견수렴",
+        "date": "2026-01-20",
+        "link": "https://www.ck.ac.kr/archives/227434"
+      },
+      {
+        "title": "HUSS 글로벌문화 교과목 1학기 수강신청 안내",
+        "date": "2026-01-15",
+        "link": "https://www.ck.ac.kr/archives/227370"
+      },
+      {
+        "title": "이천시 청년창업지원센터 입주기업 모집 공고",
+        "date": "2026-01-12",
+        "link": "https://www.ck.ac.kr/archives/227160"
       }
     ],
     "학사공지": [
@@ -65,38 +345,148 @@
         "title": "2026 하계방학중 기숙사 신청안내(신청기간_5/11~6/02)",
         "date": "2026-05-11",
         "link": "https://www.ck.ac.kr/archives/232111"
+      },
+      {
+        "title": "1학기 국가공휴일 및 대학 행사 수업 대체 일정 안내",
+        "date": "2026-04-24",
+        "link": "https://www.ck.ac.kr/archives/231365"
+      },
+      {
+        "title": "1학기 중간 강의평가 안내",
+        "date": "2026-04-17",
+        "link": "https://www.ck.ac.kr/archives/231165"
+      },
+      {
+        "title": "수업(지원)목적보상금 제도 내 저작물 출처명시 의무 안내",
+        "date": "2026-04-13",
+        "link": "https://www.ck.ac.kr/archives/230921"
+      },
+      {
+        "title": "1학기 학점인정 신청 안내 (기간 연장 ~3월 22일까지)",
+        "date": "2026-03-16",
+        "link": "https://www.ck.ac.kr/archives/229901"
+      },
+      {
+        "title": "1 기숙사 수면실 이용 안내",
+        "date": "2026-03-11",
+        "link": "https://www.ck.ac.kr/archives/229646"
+      },
+      {
+        "title": "소단위전공(Micro Degree, MD) 운영 안내",
+        "date": "2026-03-05",
+        "link": "https://www.ck.ac.kr/archives/229381"
+      },
+      {
+        "title": "1학기 진로탐색학점제 참여 학생 선정 결과 안내",
+        "date": "2026-02-27",
+        "link": "https://www.ck.ac.kr/archives/229150"
+      },
+      {
+        "title": "1학기 RISE사업단 학점교류 교과목 수강신청 안내",
+        "date": "2026-02-11",
+        "link": "https://www.ck.ac.kr/archives/228588"
+      },
+      {
+        "title": "1학기 진로탐색학점제 추가 모집 안내 (~2월 22일까지)",
+        "date": "2026-02-05",
+        "link": "https://www.ck.ac.kr/archives/228178"
+      },
+      {
+        "title": "입학(신입, 편입, 전공심화)생 학번 조회 안내",
+        "date": "2026-02-03",
+        "link": "https://www.ck.ac.kr/archives/223997"
+      },
+      {
+        "title": "1학기 수강신청 안내",
+        "date": "2026-01-27",
+        "link": "https://www.ck.ac.kr/archives/227810"
+      },
+      {
+        "title": "1학기 다전공(부전공, 복수전공) 신청 안내",
+        "date": "2026-01-02",
+        "link": "https://www.ck.ac.kr/archives/226420"
+      },
+      {
+        "title": "2025학년도 전기(02) 학위취득 유예 신청 안내",
+        "date": "2026-01-02",
+        "link": "https://www.ck.ac.kr/archives/226416"
       }
     ],
     "장학공지": [
       {
-        "title": "[한국장학재단] 2026-2학기 국가근로장학금 학생 1차 신청기간 안내 [2026.6.22.(월) 18시까지]",
+        "title": "2학기 국가근로장학금 학생 1차 신청기간 안내",
         "date": "2026-05-20",
         "link": "https://www.ck.ac.kr/archives/232656"
       },
       {
-        "title": "[한국장학재단] 2026-2학기 국가장학금 1차 신청 안내 [2026.6.22.(월) 18시 까지]",
+        "title": "2학기 국가장학금 1차 신청 안내",
         "date": "2026-05-19",
         "link": "https://www.ck.ac.kr/archives/232593"
       },
       {
-        "title": "[교내 장학] 2026-1학기 교내장학금 신청 안내",
+        "title": "1학기 교내장학금 신청 안내",
         "date": "2026-05-18",
         "link": "https://www.ck.ac.kr/archives/231590"
       },
       {
-        "title": "[화성시인재육성재단]  해외유학 장학금 안내",
+        "title": "해외유학 장학금 안내",
         "date": "2026-05-18",
         "link": "https://www.ck.ac.kr/archives/232455"
       },
       {
-        "title": "[경기도민회장학회] 2026년 경기도민회장학회 장학생 선발 안내",
+        "title": "경기도민회장학회 장학생 선발 안내",
         "date": "2026-05-07",
         "link": "https://www.ck.ac.kr/archives/231996"
+      },
+      {
+        "title": "서울독립유공자후손장학금 선발안내",
+        "date": "2026-04-21",
+        "link": "https://www.ck.ac.kr/archives/231243"
+      },
+      {
+        "title": "푸른등대 삼성기부장학금 신규장학생 선발 안내",
+        "date": "2026-03-26",
+        "link": "https://www.ck.ac.kr/archives/230239"
+      },
+      {
+        "title": "1학기 중소기업 취업연계 장학금(희망사다리 1유형) 참여자 모집",
+        "date": "2026-03-18",
+        "link": "https://www.ck.ac.kr/archives/229961"
+      },
+      {
+        "title": "1학기 국가장학금 신청자 가구원 동의 안내",
+        "date": "2026-03-13",
+        "link": "https://www.ck.ac.kr/archives/229724"
+      },
+      {
+        "title": "2026 월곡장학생 모집 안내",
+        "date": "2026-03-09",
+        "link": "https://www.ck.ac.kr/archives/229509"
+      },
+      {
+        "title": "1학기 국가근로장학 근로지 안내",
+        "date": "2026-02-27",
+        "link": "https://www.ck.ac.kr/archives/229022"
+      },
+      {
+        "title": "주거안정장학금 우선지원 및 제외기준 공지",
+        "date": "2026-02-12",
+        "link": "https://www.ck.ac.kr/archives/228552"
+      },
+      {
+        "title": "1학기 주거안정장학금 신청 안내",
+        "date": "2026-01-28",
+        "link": "https://www.ck.ac.kr/archives/227896"
+      },
+      {
+        "title": "1학기 국가장학금 2차 신청 안내",
+        "date": "2026-01-28",
+        "link": "https://www.ck.ac.kr/archives/227891"
       }
     ],
     "취창업공지": [
       {
-        "title": "[컴투스그룹] 2026 컴투스그룹 채용연계형 인턴십 GENIUS 8기 채용(~5/26 10:00)",
+        "title": "2026 컴투스그룹 채용연계형 인턴십 GENIUS 8기 채용(~5/26 10:00)",
         "date": "2026-05-14",
         "link": "https://www.ck.ac.kr/archives/232450"
       },
@@ -106,69 +496,160 @@
         "link": "https://www.ck.ac.kr/archives/232312"
       },
       {
-        "title": "2026년 K-Move 스쿨 [CG영상과정, 빅데이터기반 AI개발자 양성과정] 운영",
+        "title": "K-Move 스쿨 운영",
         "date": "2026-05-12",
         "link": "https://www.ck.ac.kr/archives/232198"
       },
       {
-        "title": "2026학년도 창업 특강(반지하게임즈_이유원 대표)",
+        "title": "창업 특강(반지하게임즈_이유원 대표)",
         "date": "2026-05-11",
         "link": "https://www.ck.ac.kr/archives/232086"
       },
       {
-        "title": "[청강문화산업대학교 졸업생 특화 프로그램] 📢 직무·진로 탐색 완성(+해외취업) 특강 참여자 모집!",
+        "title": "직무·진로 탐색 완성(+해외취업) 특강 참여자 모집!",
         "date": "2026-05-07",
         "link": "https://www.ck.ac.kr/archives/232012"
       },
       {
-        "title": "2026년 경기청년 역량강화 기회지원 사업",
+        "title": "경기청년 역량강화 기회지원 사업",
         "date": "2026-05-04",
         "link": "https://www.ck.ac.kr/archives/231875"
-      }
-    ],
-    "감염병공지": [
-      {
-        "title": "에볼라바이러스병 감염병 위기경보 수준 &#8216;관심&#8217; 단계 발령 및 예방수칙 안내",
-        "date": "2026-05-20",
-        "link": "https://www.ck.ac.kr/archives/232629"
-      }
-    ],
-    "CK_On_Show": [],
-    "언론이본청강": [
-      {
-        "title": "‘2026 AID 전환 중점 전문대학 지원사업’에 24개 사업단 선정",
-        "date": "2026-05-15",
-        "link": "https://www.ck.ac.kr/archives/232469"
       },
       {
-        "title": "[기고] 교육은 지구를 감동시키는 일이다… 청강문화산업대학교 30년",
-        "date": "2026-05-14",
-        "link": "https://www.ck.ac.kr/archives/232416"
+        "title": "2026 HUSS하계 계절학기 수강신청 안내",
+        "date": "2026-04-29",
+        "link": "https://www.ck.ac.kr/archives/231594"
       },
       {
-        "title": "청강문화산업대학교 산학협력단, 서울광진의류제조 소공인특화지원센터와 지산학 얼라이언스 협약 체결",
-        "date": "2026-05-13",
-        "link": "https://www.ck.ac.kr/archives/232353"
+        "title": "경기도일자리재단 취업지원 ‘스우커(Start of Women’s Career)’ 프로그램 안내",
+        "date": "2026-04-28",
+        "link": "https://www.ck.ac.kr/archives/231584"
       },
       {
-        "title": "청강문화산업대학교 30주년…콘텐츠로 보여준 문화콘텐츠 선도대학",
-        "date": "2026-05-11",
-        "link": "https://www.ck.ac.kr/archives/232114"
+        "title": "하이닉스 채용공고 – Maintenance/Operator",
+        "date": "2026-04-14",
+        "link": "https://www.ck.ac.kr/archives/230998"
       },
       {
-        "title": "AI시대, 창작의 가능성에 대해 묻고 답하다 … 청강문화산업대, ‘제1회 청강 국제AI영상제’ 성료",
-        "date": "2026-05-08",
-        "link": "https://www.ck.ac.kr/archives/232069"
+        "title": "공인자격 도로교통사고감정사 자격검정 안내",
+        "date": "2026-04-09",
+        "link": "https://www.ck.ac.kr/archives/230875"
+      },
+      {
+        "title": "AI를 활용한 ✨이력서 & 자기소개서&면접 집중 완성 특강✨",
+        "date": "2026-04-01",
+        "link": "https://www.ck.ac.kr/archives/230445"
+      },
+      {
+        "title": "미래내일 일경험 사업 참여학생 1기 모집(인턴형, 프로젝트형)",
+        "date": "2026-04-01",
+        "link": "https://www.ck.ac.kr/archives/230406"
+      },
+      {
+        "title": "「2026 대한민국 상생 채용박람회」 개최 안내",
+        "date": "2026-04-01",
+        "link": "https://www.ck.ac.kr/archives/230392"
+      },
+      {
+        "title": "현직자 멘토링 참여자 모집",
+        "date": "2026-03-20",
+        "link": "https://www.ck.ac.kr/archives/230047"
+      },
+      {
+        "title": "1학기 중소기업 취업연계 장학금(희망사다리 1유형) 참여자 모집",
+        "date": "2026-03-18",
+        "link": "https://www.ck.ac.kr/archives/229961"
+      },
+      {
+        "title": "경기청년 갭이어 프로그램 모집 공고",
+        "date": "2026-03-18",
+        "link": "https://www.ck.ac.kr/archives/229947"
+      },
+      {
+        "title": "채용공고) 헬퍼(현장 일용직) 채용 및 운영 담당자 모집",
+        "date": "2026-03-17",
+        "link": "https://www.ck.ac.kr/archives/229929"
+      },
+      {
+        "title": "졸업생 특화 프로그램 수요조사 안내",
+        "date": "2026-03-12",
+        "link": "https://www.ck.ac.kr/archives/229708"
+      },
+      {
+        "title": "「경기청년 맞춤형 채용지원 서비스」 사업 1기 참여자 모집 공고 안내",
+        "date": "2026-03-06",
+        "link": "https://www.ck.ac.kr/archives/229467"
+      },
+      {
+        "title": "한국콘텐츠진흥원 게임인재원 8기 교육생 모집(3월 10일까지)",
+        "date": "2026-03-06",
+        "link": "https://www.ck.ac.kr/archives/229422"
+      },
+      {
+        "title": "웹툰 스타일 캐릭터 원화가 모집_유크리에이터",
+        "date": "2026-02-24",
+        "link": "https://www.ck.ac.kr/archives/228903"
+      },
+      {
+        "title": "한국연구재단 체험형 청년인턴(장애) 채용 공고",
+        "date": "2026-02-11",
+        "link": "https://www.ck.ac.kr/archives/228529"
+      },
+      {
+        "title": "SW테스트 엔지니어링 교육생 모집",
+        "date": "2026-02-09",
+        "link": "https://www.ck.ac.kr/archives/228308"
+      },
+      {
+        "title": "관세청 인스타툰 작가 모집 안내",
+        "date": "2026-02-04",
+        "link": "https://www.ck.ac.kr/archives/228144"
+      },
+      {
+        "title": "졸업생 및 학부모 환영! 취업 상담 프로그램 안내",
+        "date": "2026-02-04",
+        "link": "https://www.ck.ac.kr/archives/228132"
+      },
+      {
+        "title": "이력서 & 자기소개서 작성법 특강",
+        "date": "2026-01-26",
+        "link": "https://www.ck.ac.kr/archives/227788"
+      },
+      {
+        "title": "포트폴리오 기초 특강 (일러스트레이터 분야)",
+        "date": "2026-01-26",
+        "link": "https://www.ck.ac.kr/archives/227782"
+      },
+      {
+        "title": "포트폴리오 기초 특강 (만화 콘텐츠 분야)",
+        "date": "2026-01-26",
+        "link": "https://www.ck.ac.kr/archives/227770"
+      },
+      {
+        "title": "고용노동부가 청년들의 첫걸음을 응원합니다!",
+        "date": "2026-01-21",
+        "link": "https://www.ck.ac.kr/archives/227616"
+      },
+      {
+        "title": "(재)공주문화관광재단 제1회 직원 채용 안내",
+        "date": "2026-01-20",
+        "link": "https://www.ck.ac.kr/archives/227455"
+      },
+      {
+        "title": "(재)공주문화관광재단 제2회 기간제근로자 채용 안내",
+        "date": "2026-01-20",
+        "link": "https://www.ck.ac.kr/archives/227446"
+      },
+      {
+        "title": "㈜가온케미칼 무역영업 직무 모집",
+        "date": "2026-01-15",
+        "link": "https://www.ck.ac.kr/archives/227360"
+      },
+      {
+        "title": "",
+        "date": "2026-01-06",
+        "link": "https://www.ck.ac.kr/archives/226760"
       }
-    ],
-    "입찰정보": [],
-    "채용정보": [
-      {
-        "title": "[청강문화산업대학교] 2026년 직원 신규채용 공고",
-        "date": "2026-05-21",
-        "link": "https://www.ck.ac.kr/archives/232677"
-      }
-    ],
-    "개인정보공시": []
+    ]
   }
 }

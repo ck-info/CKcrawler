@@ -113,8 +113,7 @@ def clean_title(title):
     title = re.sub(r'\s+', ' ', title).strip()
     return title
 
-
-    """카테고리 ID로 5월 이후 글 수집 (페이지 순회)"""
+def fetch_posts(category_id, category_name):
     collected = []
 
     for page in range(1, MAX_PAGES + 1):

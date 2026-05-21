@@ -4,6 +4,7 @@ import os
 import re
 import time
 from datetime import datetime
+from html import unescape
 
 # Firebase
 import firebase_admin
@@ -13,7 +14,7 @@ from firebase_admin import credentials, firestore
 # ⚙️ 설정값
 # ==========================================
 BASE_URL = "https://www.ck.ac.kr/wp-json/wp/v2"
-CUTOFF_DATE = datetime(2026, 5, 1).date()  # 5월 이후 글만 수집
+CUTOFF_DATE = datetime(datetime.now().year, 1, 1).date()  # 매년 1월 1일 이후 글만 수집
 MAX_PAGES = 10                              # 최대 페이지 수 (안전장치)
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
@@ -21,22 +22,16 @@ FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
 # ⚠️ 임시: 첫 실행 시 알림 없이 저장만
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = False
+FORCE_FIRST_RUN = True
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: 카테고리 ID)
 # ==========================================
 CATEGORIES = {
-    "일반공지":    1,
-    "학사공지":    32,
-    "장학공지":    1340,
-    "취창업공지":  43,
-    "감염병공지":  1370,
-    "CK_On_Show":  1079,
-    "언론이본청강": 34,
-    "입찰정보":    35,
-    "채용정보":    36,
-    "개인정보공시": 1342,
+    "일반공지":  1,
+    "학사공지":  32,
+    "장학공지":  1340,
+    "취창업공지": 43,
 }
 
 # ==========================================
@@ -102,7 +97,23 @@ elif db:
 # ==========================================
 # 글 수집 함수
 # ==========================================
-def fetch_posts(category_id, category_name):
+def clean_title(title):
+    """제목 정제:
+    - 대괄호 및 내용 제거 ([한국장학재단], [2026.6.22.] 등)
+    - 연도/학년 관련 표현 제거 (2026년, 2026학년, 2026학년도, 2026년도, 2026- 등)
+    """
+    # 대괄호 및 내용 제거
+    title = re.sub(r'\[.*?\]', '', title)
+    # 연도+학년도/학년/년도/년/- 형식 제거 (현재 연도 자동 적용)
+    current_year = datetime.now().year
+    title = re.sub(rf'{current_year}(학년도|학년|년도|년|-|\.)', '', title)
+    # 앞뒤 공백 및 특수문자 정리
+    title = title.strip(" -·:📢")
+    # 연속 공백 하나로
+    title = re.sub(r'\s+', ' ', title).strip()
+    return title
+
+
     """카테고리 ID로 5월 이후 글 수집 (페이지 순회)"""
     collected = []
 
@@ -138,7 +149,7 @@ def fetch_posts(category_id, category_name):
 
             stop = False
             for post in posts:
-                title = re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()
+                title = clean_title(unescape(re.sub(r'<[^>]+>', '', post["title"]["rendered"]).strip()))
                 link = post["link"]
                 date = post["date"][:10]
                 article_date = datetime.strptime(date, "%Y-%m-%d").date()

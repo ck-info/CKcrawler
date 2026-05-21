@@ -106,7 +106,7 @@ def clean_title(title):
     title = re.sub(r'\[.*?\]', '', title)
     # 연도+학년도/학년/년도/년/- 형식 제거 (현재 연도 자동 적용)
     current_year = datetime.now().year
-    title = re.sub(rf'{current_year}(학년도|학년|년도|년|-|\.)', '', title)
+    title = re.sub(rf'{current_year}(학년도|학년|년도|년|-|\.)?', '', title)
     # 앞뒤 공백 및 특수문자 정리
     title = title.strip(" -·:📢")
     # 연속 공백 하나로
@@ -115,13 +115,17 @@ def clean_title(title):
 
 def fetch_posts(category_id, category_name):
     collected = []
+    MAX_PER_CATEGORY = 50  # 카테고리별 최대 수집 개수
 
     for page in range(1, MAX_PAGES + 1):
+        if len(collected) >= MAX_PER_CATEGORY:
+            break
+
         try:
             res = requests.get(
                 f"{BASE_URL}/posts",
                 params={
-                    "categories": category_id,  # ID로 필터링
+                    "categories": category_id,
                     "_fields": "id,title,date,link",
                     "per_page": 10,
                     "page": page,
@@ -153,7 +157,7 @@ def fetch_posts(category_id, category_name):
                 date = post["date"][:10]
                 article_date = datetime.strptime(date, "%Y-%m-%d").date()
 
-                # 5월 이전이면 수집 중단
+                # CUTOFF_DATE 이전이면 수집 중단
                 if article_date < CUTOFF_DATE:
                     print(f"  ⏹️ {CUTOFF_DATE} 이전 글 발견, 수집 종료")
                     stop = True
@@ -165,6 +169,12 @@ def fetch_posts(category_id, category_name):
                     "link": link
                 })
 
+                # 50개 채우면 중단
+                if len(collected) >= MAX_PER_CATEGORY:
+                    print(f"  ✅ 최대 {MAX_PER_CATEGORY}개 수집 완료")
+                    stop = True
+                    break
+
             if stop:
                 break
 
@@ -174,7 +184,9 @@ def fetch_posts(category_id, category_name):
             print(f"  ❌ {page}페이지 수집 실패: {e}")
             break
 
-    return collected
+    # 최신순 정렬 후 50개 초과분(오래된 글) 제거
+    collected.sort(key=lambda x: x["date"], reverse=True)
+    return collected[:MAX_PER_CATEGORY]
 
 # ==========================================
 # 카테고리별 글 수집

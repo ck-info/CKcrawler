@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-05-27T02:46:20Z",
+  "updated_at": "2026-05-27T06:59:07Z",
   "cutoff_date": "2026-01-01",
   "total": 113,
   "categories": {
     "일반공지": [
+      {
+        "title": "PlayCKulture프로그램 지원 안내",
+        "date": "2026-05-27",
+        "link": "https://www.ck.ac.kr/archives/232890"
+      },
       {
         "title": "1학기 Green Day 실시 안내",
         "date": "2026-05-19",
@@ -248,11 +253,6 @@
         "title": "교내 흡연구역 질서유지를 위한 사전예고 및 폐쇄 조치 안내",
         "date": "2026-03-04",
         "link": "https://www.ck.ac.kr/archives/229370"
-      },
-      {
-        "title": "에듀플렉스 피트니스센터 개관 및 운영 안내",
-        "date": "2026-03-03",
-        "link": "https://www.ck.ac.kr/archives/229254"
       }
     ],
     "학사공지": [

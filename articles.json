@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-27T23:42:48Z",
+  "updated_at": "2026-05-28T02:33:28Z",
   "cutoff_date": "2026-01-01",
-  "total": 114,
+  "total": 115,
   "categories": {
     "일반공지": [
       {
@@ -410,6 +410,11 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "수도권 전문대학 START-UP AI 활용 창업캠프 참가자 모집",
+        "date": "2026-05-28",
+        "link": "https://www.ck.ac.kr/archives/232912"
+      },
       {
         "title": "취업 자신감 UP! 온라인 특강 참여자 모집",
         "date": "2026-05-27",

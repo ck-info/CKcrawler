@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-05-29T06:49:03Z",
+  "updated_at": "2026-05-29T10:40:07Z",
   "cutoff_date": "2026-01-01",
   "total": 116,
   "categories": {
     "일반공지": [
+      {
+        "title": "청강에서 100기념) 백설기콘서트 개최 안내",
+        "date": "2026-05-29",
+        "link": "https://www.ck.ac.kr/archives/233071"
+      },
       {
         "title": "씨네별 6월 영화 상영 프로그램 및 퀴즈 안내",
         "date": "2026-05-29",
@@ -248,11 +253,6 @@
         "title": "보건실 이용 안내",
         "date": "2026-03-09",
         "link": "https://www.ck.ac.kr/archives/229490"
-      },
-      {
-        "title": "청강 HUSS 사업단 재학생 서포터즈 2기 모집 안내",
-        "date": "2026-03-06",
-        "link": "https://www.ck.ac.kr/archives/229412"
       }
     ],
     "학사공지": [

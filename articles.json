@@ -1,14 +1,9 @@
 {
-  "updated_at": "2026-06-03T23:00:10Z",
+  "updated_at": "2026-06-04T01:45:40Z",
   "cutoff_date": "2026-01-01",
   "total": 116,
   "categories": {
     "일반공지": [
-      {
-        "title": "교육과정 편성 및 운영 규정 개정(안) 의견 수렴",
-        "date": "2026-06-02",
-        "link": "https://www.ck.ac.kr/archives/233150"
-      },
       {
         "title": "학칙 개정(안) 의견 수렴",
         "date": "2026-06-01",
@@ -253,6 +248,11 @@
         "title": "졸업생 특화 프로그램 수요조사 안내",
         "date": "2026-03-12",
         "link": "https://www.ck.ac.kr/archives/229708"
+      },
+      {
+        "title": "1 기숙사 수면실 이용 안내",
+        "date": "2026-03-11",
+        "link": "https://www.ck.ac.kr/archives/229646"
       }
     ],
     "학사공지": [

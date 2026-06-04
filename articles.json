@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-04T01:45:40Z",
+  "updated_at": "2026-06-04T06:37:24Z",
   "cutoff_date": "2026-01-01",
-  "total": 116,
+  "total": 117,
   "categories": {
     "일반공지": [
       {
@@ -415,6 +415,11 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "프리랜서를 위한 세무 교육",
+        "date": "2026-06-04",
+        "link": "https://www.ck.ac.kr/archives/233178"
+      },
       {
         "title": "수도권 전문대학 START-UP AI 활용 창업캠프 참가자 모집",
         "date": "2026-05-28",

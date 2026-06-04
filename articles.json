@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-04T10:35:49Z",
+  "updated_at": "2026-06-04T13:55:02Z",
   "cutoff_date": "2026-01-01",
   "total": 117,
   "categories": {
     "일반공지": [
+      {
+        "title": "청년 K-컬처 글로벌 프런티어 참가자 모집",
+        "date": "2026-06-04",
+        "link": "https://www.ck.ac.kr/archives/233261"
+      },
       {
         "title": "학교 안전사고보상공제(학생 보험) 안내",
         "date": "2026-06-04",
@@ -248,11 +253,6 @@
         "title": "다중운집인파사고 대비 국민행동요령",
         "date": "2026-03-13",
         "link": "https://www.ck.ac.kr/archives/229729"
-      },
-      {
-        "title": "졸업생 특화 프로그램 수요조사 안내",
-        "date": "2026-03-12",
-        "link": "https://www.ck.ac.kr/archives/229708"
       }
     ],
     "학사공지": [

@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-05T00:00:49Z",
+  "updated_at": "2026-06-05T04:54:38Z",
   "cutoff_date": "2026-01-01",
-  "total": 117,
+  "total": 119,
   "categories": {
     "일반공지": [
+      {
+        "title": "포트폴리오 제작 전략 특강 참여자 모집",
+        "date": "2026-06-05",
+        "link": "https://www.ck.ac.kr/archives/233314"
+      },
       {
         "title": "청년 K-컬처 글로벌 프런티어 참가자 모집",
         "date": "2026-06-04",
@@ -248,14 +253,14 @@
         "title": "교내 게시판 이용안내",
         "date": "2026-03-13",
         "link": "https://www.ck.ac.kr/archives/229743"
-      },
-      {
-        "title": "다중운집인파사고 대비 국민행동요령",
-        "date": "2026-03-13",
-        "link": "https://www.ck.ac.kr/archives/229729"
       }
     ],
     "학사공지": [
+      {
+        "title": "하계 계절학기 COSS 청강문화산업대학교 학점교류 교과목 수강신청 안내",
+        "date": "2026-06-05",
+        "link": "https://www.ck.ac.kr/archives/233324"
+      },
       {
         "title": "계절수업(하계) 수강신청 안내",
         "date": "2026-05-29",
@@ -415,6 +420,11 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "포트폴리오 제작 전략 특강 참여자 모집",
+        "date": "2026-06-05",
+        "link": "https://www.ck.ac.kr/archives/233314"
+      },
       {
         "title": "프리랜서를 위한 세무 교육",
         "date": "2026-06-04",

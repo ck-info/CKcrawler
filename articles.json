@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-09T02:32:27Z",
+  "updated_at": "2026-06-09T06:43:04Z",
   "cutoff_date": "2026-01-01",
-  "total": 122,
+  "total": 123,
   "categories": {
     "일반공지": [
+      {
+        "title": "2학기 기숙사 선발 상세 안내",
+        "date": "2026-06-09",
+        "link": "https://www.ck.ac.kr/archives/233647"
+      },
       {
         "title": "미래내일 일경험 사업 참여학생 2기 모집(인턴형)",
         "date": "2026-06-08",
@@ -248,14 +253,14 @@
         "title": "CK-혁신학생리포터 2기 모집 안내",
         "date": "2026-03-16",
         "link": "https://www.ck.ac.kr/archives/229794"
-      },
-      {
-        "title": "학생증 발급을 위한 증명사진 등록 안내",
-        "date": "2026-03-13",
-        "link": "https://www.ck.ac.kr/archives/229762"
       }
     ],
     "학사공지": [
+      {
+        "title": "2학기 기숙사 선발 상세 안내",
+        "date": "2026-06-09",
+        "link": "https://www.ck.ac.kr/archives/233647"
+      },
       {
         "title": "하계 계절학기 COSS 청강문화산업대학교 학점교류 교과목 수강신청 안내",
         "date": "2026-06-05",

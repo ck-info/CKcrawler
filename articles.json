@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-09T06:43:04Z",
+  "updated_at": "2026-06-09T10:30:59Z",
   "cutoff_date": "2026-01-01",
-  "total": 123,
+  "total": 124,
   "categories": {
     "일반공지": [
+      {
+        "title": "청강 AI 크리에이티브 부스트 공모전",
+        "date": "2026-06-09",
+        "link": "https://www.ck.ac.kr/archives/233689"
+      },
       {
         "title": "2학기 기숙사 선발 상세 안내",
         "date": "2026-06-09",
@@ -20,7 +25,7 @@
         "link": "https://www.ck.ac.kr/archives/233454"
       },
       {
-        "title": "청년 K-컬처 글로벌 프런티어 참가자 모집",
+        "title": "청년 K-컬처 글로벌 프런티어 참가자 모집(기간 연장)",
         "date": "2026-06-04",
         "link": "https://www.ck.ac.kr/archives/233261"
       },
@@ -248,14 +253,14 @@
         "title": "씨네별 3월 영화 상영 프로그램 및 퀴즈 안내",
         "date": "2026-03-16",
         "link": "https://www.ck.ac.kr/archives/229814"
-      },
-      {
-        "title": "CK-혁신학생리포터 2기 모집 안내",
-        "date": "2026-03-16",
-        "link": "https://www.ck.ac.kr/archives/229794"
       }
     ],
     "학사공지": [
+      {
+        "title": "1학기 성적처리 일정 안내",
+        "date": "2026-06-09",
+        "link": "https://www.ck.ac.kr/archives/233715"
+      },
       {
         "title": "2학기 기숙사 선발 상세 안내",
         "date": "2026-06-09",

@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-15T03:29:34Z",
+  "updated_at": "2026-06-15T09:44:43Z",
   "cutoff_date": "2026-01-01",
   "total": 125,
   "categories": {
     "일반공지": [
+      {
+        "title": "학습설계 상담 운영 규정 제정(안) 의견 수렴",
+        "date": "2026-06-15",
+        "link": "https://www.ck.ac.kr/archives/233937"
+      },
       {
         "title": "청강 AI 크리에이티브 부스트 공모전",
         "date": "2026-06-09",
@@ -248,11 +253,6 @@
         "title": "클린투게더) 개인형 이동장치 안전하게 이용해요.",
         "date": "2026-03-23",
         "link": "https://www.ck.ac.kr/archives/230088"
-      },
-      {
-        "title": "씨네별 3월 영화 상영 프로그램 및 퀴즈 안내",
-        "date": "2026-03-16",
-        "link": "https://www.ck.ac.kr/archives/229814"
       }
     ],
     "학사공지": [

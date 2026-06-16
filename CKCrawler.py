@@ -22,7 +22,11 @@ FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
 # ⚠️ 임시: 첫 실행 시 알림 없이 저장만
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = True
+FORCE_FIRST_RUN = False
+
+# ⚠️ 임시: 특정 키워드가 포함된 글을 1회 강제 알림 (제목 깨짐 복구용)
+# 복구 완료 후 빈 문자열("")로 바꾸세요!
+FORCE_NOTIFY_KEYWORD = "전자자료 콘텐츠 챌린지"
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: 카테고리 ID)
@@ -216,6 +220,12 @@ for category_name, category_id in CATEGORIES.items():
     # ⭐ 새 글 감지 (FORCE_FIRST_RUN이면 건너뜀)
     if not FORCE_FIRST_RUN:
         for article_data in posts:
+            # 강제 알림 키워드가 제목에 포함되면 무조건 알림 (1회 복구용)
+            if FORCE_NOTIFY_KEYWORD and FORCE_NOTIFY_KEYWORD in article_data["title"]:
+                new_articles.append((article_data, category_name))
+                print(f"  🔄 [강제 알림] {article_data['title']}")
+                continue
+
             if article_data["link"] not in previous_links:
                 article_date = datetime.strptime(article_data["date"], "%Y-%m-%d").date()
                 today = datetime.now().date()
@@ -230,13 +240,13 @@ print(f"\n✅ 전체 수집 완료 (총 {total_collected}개)")
 # ==========================================
 # 새 글 알림 전송
 # ==========================================
-if FORCE_FIRST_RUN or is_first_run:
-    print(f"\n🔔 최초 실행이므로 알림은 보내지 않습니다 (데이터 저장만)")
-elif new_articles:
+if new_articles and not FORCE_FIRST_RUN:
     print(f"\n🆕 새 글 {len(new_articles)}개 발견! 디스코드 알림 전송 중...")
     for article_data, category in new_articles:
         send_discord_notification(article_data, category)
         time.sleep(0.5)
+elif FORCE_FIRST_RUN or is_first_run:
+    print(f"\n🔔 최초 실행이므로 알림은 보내지 않습니다 (데이터 저장만)")
 else:
     print(f"\n✨ 새 글 없음")
 

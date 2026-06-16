@@ -1,9 +1,19 @@
 {
-  "updated_at": "2026-06-16T00:08:37Z",
+  "updated_at": "2026-06-16T05:43:31Z",
   "cutoff_date": "2026-01-01",
-  "total": 125,
+  "total": 128,
   "categories": {
     "일반공지": [
+      {
+        "title": "학칙 개정(안) 의견 수렴",
+        "date": "2026-06-16",
+        "link": "https://www.ck.ac.kr/archives/233984"
+      },
+      {
+        "title": "",
+        "date": "2026-06-16",
+        "link": "https://www.ck.ac.kr/archives/233947"
+      },
       {
         "title": "학습설계 상담 운영 규정 제정(안) 의견 수렴",
         "date": "2026-06-15",
@@ -243,16 +253,6 @@
         "title": "흡연 후 머문 자리, 다시 한 번 확인해주세요.",
         "date": "2026-03-27",
         "link": "https://www.ck.ac.kr/archives/230269"
-      },
-      {
-        "title": "1학기 동아리 자율 창작활동 지원 안내",
-        "date": "2026-03-25",
-        "link": "https://www.ck.ac.kr/archives/230225"
-      },
-      {
-        "title": "클린투게더) 개인형 이동장치 안전하게 이용해요.",
-        "date": "2026-03-23",
-        "link": "https://www.ck.ac.kr/archives/230088"
       }
     ],
     "학사공지": [
@@ -435,6 +435,21 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "스트레스 관리 및 직장생활 적응법 참여자 모집",
+        "date": "2026-06-16",
+        "link": "https://www.ck.ac.kr/archives/233974"
+      },
+      {
+        "title": "비즈니스 매너 교육 참여자 모집",
+        "date": "2026-06-16",
+        "link": "https://www.ck.ac.kr/archives/233967"
+      },
+      {
+        "title": "신입사원 경제·인사노무 교육 참여자 모집",
+        "date": "2026-06-16",
+        "link": "https://www.ck.ac.kr/archives/233959"
+      },
       {
         "title": "수도권 전문대학 START-UP AI 활용 연합창업캠프 참가자 모집 안내",
         "date": "2026-06-11",

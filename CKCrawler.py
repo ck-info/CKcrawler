@@ -22,7 +22,7 @@ FIREBASE_CREDENTIALS = os.environ.get("FIREBASE_CREDENTIALS")
 
 # ⚠️ 임시: 첫 실행 시 알림 없이 저장만
 # 한 번 실행 후 False로 바꾸세요!
-FORCE_FIRST_RUN = False
+FORCE_FIRST_RUN = True
 
 # ==========================================
 # 크롤링할 카테고리 목록 (이름: 카테고리 ID)
@@ -99,11 +99,19 @@ elif db:
 # ==========================================
 def clean_title(title):
     """제목 정제:
-    - 대괄호 및 내용 제거 ([한국장학재단], [2026.6.22.] 등)
-    - 연도/학년 관련 표현 제거 (2026년, 2026학년, 2026학년도, 2026년도, 2026- 등)
+    - 제목 전체가 대괄호로 감싸진 경우 안쪽 내용만 유지
+    - 그 외에는 대괄호 및 내용 제거 ([한국장학재단] 등)
+    - 연도/학년 관련 표현 제거
     """
-    # 대괄호 및 내용 제거
-    title = re.sub(r'\[.*?\]', '', title)
+    original = title.strip()
+
+    # 제목 전체가 [ ]로 감싸진 경우 → 바깥 대괄호만 벗기기
+    if original.startswith("[") and original.endswith("]") and original.count("[") == 1:
+        title = original[1:-1]
+    else:
+        # 일반적인 경우: 대괄호 및 내용 제거
+        title = re.sub(r'\[.*?\]', '', original)
+
     # 연도+학년도/학년/년도/년/- 형식 제거 (현재 연도 자동 적용)
     current_year = datetime.now().year
     title = re.sub(rf'{current_year}(학년도|학년|년도|년|-|\.)?', '', title)
@@ -111,6 +119,11 @@ def clean_title(title):
     title = title.strip(" -·:📢")
     # 연속 공백 하나로
     title = re.sub(r'\s+', ' ', title).strip()
+
+    # 정제 결과가 비어버리면 원본 사용 (안전장치)
+    if not title:
+        title = original
+
     return title
 
 def fetch_posts(category_id, category_name):

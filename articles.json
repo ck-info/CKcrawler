@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-16T23:54:07Z",
+  "updated_at": "2026-06-17T02:58:56Z",
   "cutoff_date": "2026-01-01",
   "total": 128,
   "categories": {
     "일반공지": [
+      {
+        "title": "‘동물’ 캐릭터공모전 수상작 공지",
+        "date": "2026-06-17",
+        "link": "https://www.ck.ac.kr/archives/234035"
+      },
       {
         "title": "학칙 개정(안) 의견 수렴",
         "date": "2026-06-16",
@@ -248,11 +253,6 @@
         "title": "국토교통부 안내",
         "date": "2026-03-30",
         "link": "https://www.ck.ac.kr/archives/230288"
-      },
-      {
-        "title": "흡연 후 머문 자리, 다시 한 번 확인해주세요.",
-        "date": "2026-03-27",
-        "link": "https://www.ck.ac.kr/archives/230269"
       }
     ],
     "학사공지": [

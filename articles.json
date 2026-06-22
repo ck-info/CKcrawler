@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-06-21T23:04:44Z",
+  "updated_at": "2026-06-22T02:00:00Z",
   "cutoff_date": "2026-01-01",
   "total": 128,
   "categories": {
     "일반공지": [
+      {
+        "title": "🏫 재학생 만족도 조사 실시",
+        "date": "2026-06-22",
+        "link": "https://www.ck.ac.kr/archives/234096"
+      },
       {
         "title": "2학기 2차 교수초빙(전임,초빙,겸임) 공고",
         "date": "2026-06-18",
@@ -248,11 +253,6 @@
         "title": "청강 속 또 다른 나: AI 캐릭터로 들려주는 대학생활 이야기 공모전 1차 합격자 발표",
         "date": "2026-03-30",
         "link": "https://www.ck.ac.kr/archives/230334"
-      },
-      {
-        "title": "1학기 사랑의 헌혈 캠페인 안내",
-        "date": "2026-03-30",
-        "link": "https://www.ck.ac.kr/archives/230316"
       }
     ],
     "학사공지": [

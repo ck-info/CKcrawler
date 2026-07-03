@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-07-03T06:07:23Z",
+  "updated_at": "2026-07-03T09:40:49Z",
   "cutoff_date": "2026-01-01",
   "total": 134,
   "categories": {
     "일반공지": [
+      {
+        "title": "CK-혁신 크루 2기 모집 안내",
+        "date": "2026-07-03",
+        "link": "https://www.ck.ac.kr/archives/234528"
+      },
       {
         "title": "전공 간 융복합 콘텐츠 제작 프로젝트 공모전 콘텐츠 제작팀 선발 안내",
         "date": "2026-06-26",
@@ -248,11 +253,6 @@
         "title": "육군3사관학교 생도 모집 안내",
         "date": "2026-03-31",
         "link": "https://www.ck.ac.kr/archives/230367"
-      },
-      {
-        "title": "씨네별 4월 영화 상영 프로그램 및 퀴즈 안내",
-        "date": "2026-03-31",
-        "link": "https://www.ck.ac.kr/archives/230348"
       }
     ],
     "학사공지": [

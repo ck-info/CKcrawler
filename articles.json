@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-07-09T04:27:45Z",
+  "updated_at": "2026-07-09T07:59:37Z",
   "cutoff_date": "2026-01-01",
   "total": 134,
   "categories": {
     "일반공지": [
+      {
+        "title": "pixiv 한국 학생 일러스트 공모전 참가 안내",
+        "date": "2026-07-09",
+        "link": "https://www.ck.ac.kr/archives/234604"
+      },
       {
         "title": "CK-혁신 크루 2기 모집 안내",
         "date": "2026-07-03",
@@ -248,11 +253,6 @@
         "title": "미래내일 일경험 사업 참여학생 1기 모집(인턴형, 프로젝트형)",
         "date": "2026-04-01",
         "link": "https://www.ck.ac.kr/archives/230406"
-      },
-      {
-        "title": "육군3사관학교 생도 모집 안내",
-        "date": "2026-03-31",
-        "link": "https://www.ck.ac.kr/archives/230367"
       }
     ],
     "학사공지": [

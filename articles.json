@@ -1,9 +1,19 @@
 {
-  "updated_at": "2026-07-10T01:07:03Z",
+  "updated_at": "2026-07-10T05:30:05Z",
   "cutoff_date": "2026-01-01",
   "total": 134,
   "categories": {
     "일반공지": [
+      {
+        "title": "2학기 3차 교수초빙(초빙) 공고",
+        "date": "2026-07-10",
+        "link": "https://www.ck.ac.kr/archives/234663"
+      },
+      {
+        "title": "혁신학생리포터와 함께 보는 청강 이야기: 내 마음을 다스리는 법, 정서조절코칭",
+        "date": "2026-07-10",
+        "link": "https://www.ck.ac.kr/archives/234633"
+      },
       {
         "title": "pixiv 한국 학생 일러스트 공모전 참가 안내",
         "date": "2026-07-09",
@@ -243,16 +253,6 @@
         "title": "인천 청년 해외배낭연수 장학생 선발 안내",
         "date": "2026-04-07",
         "link": "https://www.ck.ac.kr/archives/230678"
-      },
-      {
-        "title": "2학기 1차 교수초빙(초빙,겸임) 공고",
-        "date": "2026-04-06",
-        "link": "https://www.ck.ac.kr/archives/230654"
-      },
-      {
-        "title": "미래내일 일경험 사업 참여학생 1기 모집(인턴형, 프로젝트형)",
-        "date": "2026-04-01",
-        "link": "https://www.ck.ac.kr/archives/230406"
       }
     ],
     "학사공지": [

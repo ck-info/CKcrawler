@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-07-13T04:34:24Z",
+  "updated_at": "2026-07-13T08:11:49Z",
   "cutoff_date": "2026-01-01",
   "total": 135,
   "categories": {
     "일반공지": [
+      {
+        "title": "HUSS 2학기 수강신청 및 안내",
+        "date": "2026-07-13",
+        "link": "https://www.ck.ac.kr/archives/234737"
+      },
       {
         "title": "2학기 3차 교수초빙(초빙) 공고",
         "date": "2026-07-10",
@@ -248,11 +253,6 @@
         "title": "학생증 발급 신청 안내",
         "date": "2026-04-07",
         "link": "https://www.ck.ac.kr/archives/230686"
-      },
-      {
-        "title": "인천 청년 해외배낭연수 장학생 선발 안내",
-        "date": "2026-04-07",
-        "link": "https://www.ck.ac.kr/archives/230678"
       }
     ],
     "학사공지": [

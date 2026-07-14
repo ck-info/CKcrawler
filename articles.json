@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-07-14T01:51:16Z",
+  "updated_at": "2026-07-14T04:45:35Z",
   "cutoff_date": "2026-01-01",
-  "total": 135,
+  "total": 136,
   "categories": {
     "일반공지": [
+      {
+        "title": "학생창업기업 현황 조사 안내",
+        "date": "2026-07-14",
+        "link": "https://www.ck.ac.kr/archives/234754"
+      },
       {
         "title": "HUSS 2학기 수강신청 및 안내",
         "date": "2026-07-13",
@@ -13,11 +18,6 @@
         "title": "2학기 3차 교수초빙(초빙) 공고",
         "date": "2026-07-10",
         "link": "https://www.ck.ac.kr/archives/234663"
-      },
-      {
-        "title": "혁신학생리포터와 함께 보는 청강 이야기: 내 마음을 다스리는 법, 정서조절코칭",
-        "date": "2026-07-10",
-        "link": "https://www.ck.ac.kr/archives/234633"
       },
       {
         "title": "pixiv 한국 학생 일러스트 공모전 참가 안내",
@@ -455,6 +455,11 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "학생창업기업 현황 조사 안내",
+        "date": "2026-07-14",
+        "link": "https://www.ck.ac.kr/archives/234754"
+      },
       {
         "title": "하반기 한미 대학생 연수(WEST) 프로그램 참가자 모집",
         "date": "2026-07-10",

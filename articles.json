@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-16T01:58:04Z",
+  "updated_at": "2026-07-16T05:11:09Z",
   "cutoff_date": "2026-01-01",
-  "total": 137,
+  "total": 139,
   "categories": {
     "일반공지": [
       {
@@ -13,11 +13,6 @@
         "title": "학생창업기업 현황 조사 안내",
         "date": "2026-07-14",
         "link": "https://www.ck.ac.kr/archives/234754"
-      },
-      {
-        "title": "HUSS 2학기 수강신청 및 안내",
-        "date": "2026-07-13",
-        "link": "https://www.ck.ac.kr/archives/234737"
       },
       {
         "title": "2학기 3차 교수초빙(초빙) 공고",
@@ -253,6 +248,11 @@
         "title": "청강문화산업대학교 AI 활용 가이드 공유",
         "date": "2026-04-07",
         "link": "https://www.ck.ac.kr/archives/230723"
+      },
+      {
+        "title": "학생증 발급 신청 안내",
+        "date": "2026-04-07",
+        "link": "https://www.ck.ac.kr/archives/230686"
       }
     ],
     "학사공지": [
@@ -260,6 +260,11 @@
         "title": "2학기 중앙대학교 학점교류 안내",
         "date": "2026-07-15",
         "link": "https://www.ck.ac.kr/archives/234856"
+      },
+      {
+        "title": "HUSS 2학기 수강신청 및 안내",
+        "date": "2026-07-13",
+        "link": "https://www.ck.ac.kr/archives/234737"
       },
       {
         "title": "2학기 다전공(부전공, 복수전공) 신청 안내",
@@ -460,6 +465,11 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "MONCareer 5기 인턴십 채용 안내 (~7/26까지)",
+        "date": "2026-07-16",
+        "link": "https://www.ck.ac.kr/archives/234878"
+      },
       {
         "title": "학생창업기업 현황 조사 안내",
         "date": "2026-07-14",

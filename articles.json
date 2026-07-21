@@ -1,9 +1,19 @@
 {
-  "updated_at": "2026-07-20T23:51:14Z",
+  "updated_at": "2026-07-21T02:00:31Z",
   "cutoff_date": "2026-01-01",
   "total": 142,
   "categories": {
     "일반공지": [
+      {
+        "title": "청년일경험 3기 참여기업 모집",
+        "date": "2026-07-21",
+        "link": "https://www.ck.ac.kr/archives/235080"
+      },
+      {
+        "title": "학적처리에 관한 규정 개정(안)에 대한 의견 수렴",
+        "date": "2026-07-21",
+        "link": "https://www.ck.ac.kr/archives/235062"
+      },
       {
         "title": "KOREA–FINLAND ESPORTS FESTIVAL 개최 안내",
         "date": "2026-07-15",
@@ -243,16 +253,6 @@
         "title": "경기도 기후행동 기회소득 사업 안내",
         "date": "2026-04-08",
         "link": "https://www.ck.ac.kr/archives/230845"
-      },
-      {
-        "title": "청강문화산업대학교 AI 활용 가이드 공유",
-        "date": "2026-04-07",
-        "link": "https://www.ck.ac.kr/archives/230723"
-      },
-      {
-        "title": "학생증 발급 신청 안내",
-        "date": "2026-04-07",
-        "link": "https://www.ck.ac.kr/archives/230686"
       }
     ],
     "학사공지": [
@@ -470,6 +470,11 @@
       }
     ],
     "취창업공지": [
+      {
+        "title": "청년일경험 3기 참여기업 모집",
+        "date": "2026-07-21",
+        "link": "https://www.ck.ac.kr/archives/235080"
+      },
       {
         "title": "전공 및 희망 직무별 현직자 멘토와 함께하는 멘토링 프로그램 참여자 모집",
         "date": "2026-07-20",
@@ -714,11 +719,6 @@
         "title": "고용노동부가 청년들의 첫걸음을 응원합니다!",
         "date": "2026-01-21",
         "link": "https://www.ck.ac.kr/archives/227616"
-      },
-      {
-        "title": "(재)공주문화관광재단 제1회 직원 채용 안내",
-        "date": "2026-01-20",
-        "link": "https://www.ck.ac.kr/archives/227455"
       }
     ]
   }

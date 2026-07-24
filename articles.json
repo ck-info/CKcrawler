@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T02:01:53Z",
+  "updated_at": "2026-07-24T05:33:59Z",
   "cutoff_date": "2026-01-01",
   "total": 142,
   "categories": {
@@ -471,6 +471,11 @@
     ],
     "취창업공지": [
       {
+        "title": "국세청 국세외수입 체납관리단 기간제근로자 모집",
+        "date": "2026-07-24",
+        "link": "https://www.ck.ac.kr/archives/235204"
+      },
+      {
         "title": "청년일경험 3기 참여기업 모집",
         "date": "2026-07-21",
         "link": "https://www.ck.ac.kr/archives/235080"
@@ -714,11 +719,6 @@
         "title": "포트폴리오 기초 특강 (만화 콘텐츠 분야)",
         "date": "2026-01-26",
         "link": "https://www.ck.ac.kr/archives/227770"
-      },
-      {
-        "title": "고용노동부가 청년들의 첫걸음을 응원합니다!",
-        "date": "2026-01-21",
-        "link": "https://www.ck.ac.kr/archives/227616"
       }
     ]
   }

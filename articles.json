@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-09-10T02:30:02Z",
+  "updated_at": "2026-09-10T07:28:30Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "전공 간 융복합 콘텐츠 제작 프로젝트 공모전 2차 콘텐츠 제작팀 합격 명단 안내",
+        "date": "2026-09-10",
+        "link": "https://www.ck.ac.kr/archives/237421"
+      },
       {
         "title": "슬기로운 독방(讀房)생활(feat. 디지털 디톡스)",
         "date": "2026-09-03",
@@ -248,11 +253,6 @@
         "title": "직무·진로 탐색 완성(+해외취업) 특강 참여자 모집!",
         "date": "2026-05-07",
         "link": "https://www.ck.ac.kr/archives/232012"
-      },
-      {
-        "title": "경기청년 역량강화 기회지원 사업",
-        "date": "2026-05-04",
-        "link": "https://www.ck.ac.kr/archives/231875"
       }
     ],
     "학사공지": [

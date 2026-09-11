@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-09-11T02:24:27Z",
+  "updated_at": "2026-09-11T07:23:35Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "청강 가을행사(체육대회&축제) 안내",
+        "date": "2026-09-11",
+        "link": "https://www.ck.ac.kr/archives/237498"
+      },
       {
         "title": "청강 AI 크리에이티브 캠프 참가자 모집 안내",
         "date": "2026-09-11",
@@ -248,11 +253,6 @@
         "title": "청강봉사단 프로그램 농촌재능나눔활동 참가자 모집",
         "date": "2026-05-07",
         "link": "https://www.ck.ac.kr/archives/232041"
-      },
-      {
-        "title": "보건실 휴실(5.13.수, 5.14.목) 및 학교 인근 병원 안내",
-        "date": "2026-05-07",
-        "link": "https://www.ck.ac.kr/archives/232028"
       }
     ],
     "학사공지": [

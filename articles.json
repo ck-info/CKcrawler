@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-09-13T23:58:13Z",
+  "updated_at": "2026-09-14T03:43:49Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "2학기 그린데이 실시안내",
+        "date": "2026-09-14",
+        "link": "https://www.ck.ac.kr/archives/237576"
+      },
       {
         "title": "청강 가을행사(체육대회&축제) 안내",
         "date": "2026-09-11",
@@ -248,11 +253,6 @@
         "title": "HUSS 융합캠프 아카데미",
         "date": "2026-05-13",
         "link": "https://www.ck.ac.kr/archives/232308"
-      },
-      {
-        "title": "청강봉사단 프로그램 농촌재능나눔활동 참가자 모집",
-        "date": "2026-05-07",
-        "link": "https://www.ck.ac.kr/archives/232041"
       }
     ],
     "학사공지": [

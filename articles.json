@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-09-16T06:19:30Z",
+  "updated_at": "2026-09-16T11:53:04Z",
   "cutoff_date": "2026-01-01",
   "total": 159,
   "categories": {
     "일반공지": [
+      {
+        "title": "정문 등교버스 운행 중단 안내",
+        "date": "2026-09-16",
+        "link": "https://www.ck.ac.kr/archives/237731"
+      },
       {
         "title": "2학기 중소기업 취업연계 장학사업 신규 장학생 모집",
         "date": "2026-09-15",
@@ -248,11 +253,6 @@
         "title": "HUSS 융합캠프(인사이트)참가자 모집",
         "date": "2026-05-13",
         "link": "https://www.ck.ac.kr/archives/232409"
-      },
-      {
-        "title": "개교 30주년 기념굿즈 배부 안내",
-        "date": "2026-05-13",
-        "link": "https://www.ck.ac.kr/archives/232377"
       }
     ],
     "학사공지": [
@@ -556,6 +556,11 @@
     ],
     "취창업공지": [
       {
+        "title": "졸업생 특화 프로그램 사업 우수사례 수기 공모전 안내",
+        "date": "2026-09-16",
+        "link": "https://www.ck.ac.kr/archives/237722"
+      },
+      {
         "title": "2학기 중소기업 취업연계 장학사업 신규 장학생 모집",
         "date": "2026-09-15",
         "link": "https://www.ck.ac.kr/archives/237667"
@@ -799,11 +804,6 @@
         "title": "SW테스트 엔지니어링 교육생 모집",
         "date": "2026-02-09",
         "link": "https://www.ck.ac.kr/archives/228308"
-      },
-      {
-        "title": "관세청 인스타툰 작가 모집 안내",
-        "date": "2026-02-04",
-        "link": "https://www.ck.ac.kr/archives/228144"
       }
     ]
   }

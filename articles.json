@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T05:38:54Z",
+  "updated_at": "2026-09-17T10:46:27Z",
   "cutoff_date": "2026-01-01",
   "total": 159,
   "categories": {
@@ -556,6 +556,11 @@
     ],
     "취창업공지": [
       {
+        "title": "「 재도전 응원본부 페일콘(Failcon)」 안내",
+        "date": "2026-09-17",
+        "link": "https://www.ck.ac.kr/archives/237758"
+      },
+      {
         "title": "졸업생 특화 프로그램 사업 우수사례 수기 공모전 안내",
         "date": "2026-09-16",
         "link": "https://www.ck.ac.kr/archives/237722"
@@ -799,11 +804,6 @@
         "title": "한국연구재단 체험형 청년인턴(장애) 채용 공고",
         "date": "2026-02-11",
         "link": "https://www.ck.ac.kr/archives/228529"
-      },
-      {
-        "title": "SW테스트 엔지니어링 교육생 모집",
-        "date": "2026-02-09",
-        "link": "https://www.ck.ac.kr/archives/228308"
       }
     ]
   }

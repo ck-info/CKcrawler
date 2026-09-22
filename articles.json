@@ -1,9 +1,19 @@
 {
-  "updated_at": "2026-09-21T23:27:08Z",
+  "updated_at": "2026-09-22T01:43:27Z",
   "cutoff_date": "2026-01-01",
   "total": 159,
   "categories": {
     "일반공지": [
+      {
+        "title": "씨네별 10월 영화 상영 프로그램 및 퀴즈 안내",
+        "date": "2026-09-22",
+        "link": "https://www.ck.ac.kr/archives/237781"
+      },
+      {
+        "title": "대학도서관(청강문화산업대학교) 이용자 만족도조사",
+        "date": "2026-09-22",
+        "link": "https://www.ck.ac.kr/archives/237833"
+      },
       {
         "title": "정문 등교버스 운행 중단 안내",
         "date": "2026-09-16",
@@ -243,16 +253,6 @@
         "title": "청강 속 또 다른 나: AI 캐릭터로 들려주는 대학생활 이야기 공모전 최종 심사 결과 발표",
         "date": "2026-05-19",
         "link": "https://www.ck.ac.kr/archives/232545"
-      },
-      {
-        "title": "사회배려층 학생 대상 무료 운전면허 취득 지원 프로그램 안내",
-        "date": "2026-05-15",
-        "link": "https://www.ck.ac.kr/archives/232459"
-      },
-      {
-        "title": "HUSS 융합캠프(인사이트)참가자 모집",
-        "date": "2026-05-13",
-        "link": "https://www.ck.ac.kr/archives/232409"
       }
     ],
     "학사공지": [

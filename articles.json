@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-09-23T01:36:50Z",
+  "updated_at": "2026-09-23T07:07:02Z",
   "cutoff_date": "2026-01-01",
   "total": 159,
   "categories": {
     "일반공지": [
+      {
+        "title": "2학기 사랑의 헌혈 캠페인 실시 안내",
+        "date": "2026-09-23",
+        "link": "https://www.ck.ac.kr/archives/237944"
+      },
       {
         "title": "씨네별 10월 영화 상영 프로그램 및 퀴즈 안내",
         "date": "2026-09-22",
@@ -248,11 +253,6 @@
         "title": "청강축제 안내",
         "date": "2026-05-19",
         "link": "https://www.ck.ac.kr/archives/232562"
-      },
-      {
-        "title": "청강 속 또 다른 나: AI 캐릭터로 들려주는 대학생활 이야기 공모전 최종 심사 결과 발표",
-        "date": "2026-05-19",
-        "link": "https://www.ck.ac.kr/archives/232545"
       }
     ],
     "학사공지": [

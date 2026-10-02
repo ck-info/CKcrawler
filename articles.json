@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-10-02T00:24:14Z",
+  "updated_at": "2026-10-02T05:57:35Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "10월 학습법 특강 : “지친 나를 회복하고, 다음 나를 설계하다” 안내",
+        "date": "2026-10-02",
+        "link": "https://www.ck.ac.kr/archives/238209"
+      },
       {
         "title": "2학기 PlayCKulture프로그램 지원 안내",
         "date": "2026-09-30",
@@ -248,11 +253,6 @@
         "title": "학생이력관리 규정 개정(안) 의견 수렴",
         "date": "2026-06-01",
         "link": "https://www.ck.ac.kr/archives/233116"
-      },
-      {
-        "title": "청강에서 100기념) 백설기콘서트 개최 안내",
-        "date": "2026-05-29",
-        "link": "https://www.ck.ac.kr/archives/233071"
       }
     ],
     "학사공지": [

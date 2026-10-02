@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-01T20:43:31Z",
+  "updated_at": "2026-10-02T00:24:14Z",
   "cutoff_date": "2026-01-01",
-  "total": 159,
+  "total": 158,
   "categories": {
     "일반공지": [
       {
@@ -165,6 +165,11 @@
         "link": "https://www.ck.ac.kr/archives/234528"
       },
       {
+        "title": "2학기 다전공(부전공, 복수전공) 신청 안내",
+        "date": "2026-07-03",
+        "link": "https://www.ck.ac.kr/archives/234505"
+      },
+      {
         "title": "전공 간 융복합 콘텐츠 제작 프로젝트 공모전 콘텐츠 제작팀 선발 안내",
         "date": "2026-06-26",
         "link": "https://www.ck.ac.kr/archives/234369"
@@ -248,11 +253,6 @@
         "title": "청강에서 100기념) 백설기콘서트 개최 안내",
         "date": "2026-05-29",
         "link": "https://www.ck.ac.kr/archives/233071"
-      },
-      {
-        "title": "씨네별 6월 영화 상영 프로그램 및 퀴즈 안내",
-        "date": "2026-05-29",
-        "link": "https://www.ck.ac.kr/archives/232962"
       }
     ],
     "학사공지": [
@@ -305,11 +305,6 @@
         "title": "HUSS 2학기 수강신청 및 안내",
         "date": "2026-07-13",
         "link": "https://www.ck.ac.kr/archives/234737"
-      },
-      {
-        "title": "2학기 다전공(부전공, 복수전공) 신청 안내",
-        "date": "2026-07-03",
-        "link": "https://www.ck.ac.kr/archives/234505"
       },
       {
         "title": "2025학년도 후기(08) 학위취득 유예 신청 안내",

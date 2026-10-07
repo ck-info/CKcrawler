@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T02:37:54Z",
+  "updated_at": "2026-10-07T09:37:37Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
@@ -551,6 +551,11 @@
     ],
     "취창업공지": [
       {
+        "title": "「 장애학생 지원 권역별 선도대학 운영 사업」-‘취업역량 강화반’ 참가자 모집 안내",
+        "date": "2026-10-07",
+        "link": "https://www.ck.ac.kr/archives/238246"
+      },
+      {
         "title": "「 재도전 응원본부 페일콘(Failcon)」 안내",
         "date": "2026-09-17",
         "link": "https://www.ck.ac.kr/archives/237758"
@@ -794,11 +799,6 @@
         "title": "웹툰 스타일 캐릭터 원화가 모집_유크리에이터",
         "date": "2026-02-24",
         "link": "https://www.ck.ac.kr/archives/228903"
-      },
-      {
-        "title": "한국연구재단 체험형 청년인턴(장애) 채용 공고",
-        "date": "2026-02-11",
-        "link": "https://www.ck.ac.kr/archives/228529"
       }
     ]
   }

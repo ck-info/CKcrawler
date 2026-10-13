@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-10-12T23:42:07Z",
+  "updated_at": "2026-10-13T04:54:02Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "CK아트페어「도원결의」마켓 개최 안내",
+        "date": "2026-10-13",
+        "link": "https://www.ck.ac.kr/archives/238400"
+      },
       {
         "title": "연구실 안전관리규정 개정(안) 의견수렴",
         "date": "2026-10-12",
@@ -248,11 +253,6 @@
         "title": "학칙 개정(안) 의견 수렴",
         "date": "2026-06-01",
         "link": "https://www.ck.ac.kr/archives/233117"
-      },
-      {
-        "title": "다전공제 이수에 관한 규정 개정(안)에 대한 의견 수렴",
-        "date": "2026-06-01",
-        "link": "https://www.ck.ac.kr/archives/233125"
       }
     ],
     "학사공지": [
@@ -551,6 +551,11 @@
     ],
     "취창업공지": [
       {
+        "title": "졸업생 특화프로그램 만족도 조사 안내",
+        "date": "2026-10-13",
+        "link": "https://www.ck.ac.kr/archives/238408"
+      },
+      {
         "title": "『 잡(JOB)아라 매칭데이, 취업박람회』",
         "date": "2026-10-12",
         "link": "https://www.ck.ac.kr/archives/238322"
@@ -794,11 +799,6 @@
         "title": "「경기청년 맞춤형 채용지원 서비스」 사업 1기 참여자 모집 공고 안내",
         "date": "2026-03-06",
         "link": "https://www.ck.ac.kr/archives/229467"
-      },
-      {
-        "title": "한국콘텐츠진흥원 게임인재원 8기 교육생 모집(3월 10일까지)",
-        "date": "2026-03-06",
-        "link": "https://www.ck.ac.kr/archives/229422"
       }
     ]
   }

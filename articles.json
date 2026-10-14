@@ -1,9 +1,14 @@
 {
-  "updated_at": "2026-10-14T02:02:45Z",
+  "updated_at": "2026-10-14T07:52:05Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "통학버스 방학노선(잠실권) 폐지 안내",
+        "date": "2026-10-14",
+        "link": "https://www.ck.ac.kr/archives/238436"
+      },
       {
         "title": "CK아트페어「도원결의」마켓 개최 안내",
         "date": "2026-10-13",
@@ -248,11 +253,6 @@
         "title": "학교 안전사고보상공제(학생 보험) 안내",
         "date": "2026-06-04",
         "link": "https://www.ck.ac.kr/archives/233229"
-      },
-      {
-        "title": "학칙 개정(안) 의견 수렴",
-        "date": "2026-06-01",
-        "link": "https://www.ck.ac.kr/archives/233117"
       }
     ],
     "학사공지": [

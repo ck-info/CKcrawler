@@ -1,9 +1,19 @@
 {
-  "updated_at": "2026-10-20T00:51:44Z",
+  "updated_at": "2026-10-20T05:36:22Z",
   "cutoff_date": "2026-01-01",
   "total": 158,
   "categories": {
     "일반공지": [
+      {
+        "title": "2027학년도 1학기 1차 교수초빙(전임,초빙,겸임) 공고",
+        "date": "2026-10-20",
+        "link": "https://www.ck.ac.kr/archives/238563"
+      },
+      {
+        "title": "전문대학 혁신지원사업 만족도 조사 참여 안내",
+        "date": "2026-10-20",
+        "link": "https://www.ck.ac.kr/archives/238549"
+      },
       {
         "title": "통학버스 방학노선(잠실권) 폐지 안내",
         "date": "2026-10-14",
@@ -243,16 +253,6 @@
         "title": "창작의 경계를 넘는 비정규 교육과정 안내",
         "date": "2026-06-06",
         "link": "https://www.ck.ac.kr/archives/233454"
-      },
-      {
-        "title": "청년 K-컬처 글로벌 프런티어 참가자 모집(기간 연장)",
-        "date": "2026-06-04",
-        "link": "https://www.ck.ac.kr/archives/233261"
-      },
-      {
-        "title": "학교 안전사고보상공제(학생 보험) 안내",
-        "date": "2026-06-04",
-        "link": "https://www.ck.ac.kr/archives/233229"
       }
     ],
     "학사공지": [

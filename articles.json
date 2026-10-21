@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T01:10:37Z",
+  "updated_at": "2026-10-21T06:14:54Z",
   "cutoff_date": "2026-01-01",
   "total": 159,
   "categories": {
@@ -556,6 +556,21 @@
     ],
     "취창업공지": [
       {
+        "title": "한국연구재단 체험형 청년인턴(장애) 채용 안내",
+        "date": "2026-10-21",
+        "link": "https://www.ck.ac.kr/archives/238605"
+      },
+      {
+        "title": "카페바리스타 2급 자격증 취득 과정 참여자 모집 (~10/30)",
+        "date": "2026-10-21",
+        "link": "https://www.ck.ac.kr/archives/238596"
+      },
+      {
+        "title": "한국문화예술교육진흥원 26-4차 직원채용 설명회 안내",
+        "date": "2026-10-21",
+        "link": "https://www.ck.ac.kr/archives/238592"
+      },
+      {
         "title": "미래산업 취업역량강화 프로그램 안내",
         "date": "2026-10-16",
         "link": "https://www.ck.ac.kr/archives/238481"
@@ -789,21 +804,6 @@
         "title": "현직자 멘토링 참여자 모집",
         "date": "2026-03-20",
         "link": "https://www.ck.ac.kr/archives/230047"
-      },
-      {
-        "title": "1학기 중소기업 취업연계 장학금(희망사다리 1유형) 참여자 모집",
-        "date": "2026-03-18",
-        "link": "https://www.ck.ac.kr/archives/229961"
-      },
-      {
-        "title": "경기청년 갭이어 프로그램 모집 공고",
-        "date": "2026-03-18",
-        "link": "https://www.ck.ac.kr/archives/229947"
-      },
-      {
-        "title": "채용공고) 헬퍼(현장 일용직) 채용 및 운영 담당자 모집",
-        "date": "2026-03-17",
-        "link": "https://www.ck.ac.kr/archives/229929"
       }
     ]
   }

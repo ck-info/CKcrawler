@@ -267,17 +267,5 @@ print(f"\n📊 카테고리별 수집 결과:")
 for category_name, items in categorized.items():
     print(f"  - {category_name}: {len(items)}개")
 
-# ==========================================
-# 백업용 JSON 저장
-# ==========================================
-output = {
-    "updated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-    "cutoff_date": str(CUTOFF_DATE),
-    "total": total_collected,
-    "categories": categorized
-}
-
-with open("articles.json", "w", encoding="utf-8") as f:
-    json.dump(output, f, ensure_ascii=False, indent=2)
-
-print(f"\n✅ articles.json 백업 저장 완료")
+# JSON 파일 저장/커밋은 제거됨
+# → 데이터는 Firestore에만 저장하므로 GitHub 푸시가 발생하지 않음
